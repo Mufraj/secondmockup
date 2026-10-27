@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/home-v2/index.html" },
+    { "source": "/:path((?!home-v2/).*)", "destination": "/home-v2/:path" }
+  ]
+}
