@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>White Feather Supplies | Premium Airtight Food & Pantry Storage Containers</title>
+  <meta name="description" content="Elevate your kitchen pantry with White Feather Supplies. Premium BPA-free plastic food storage containers engineered with airtight silicone gaskets for lasting freshness.">
+  
+  <!-- Canonical & OpenGraph Meta -->
+  <link rel="canonical" href="https://whitefeathersupplies.com/">
+  <meta property="og:site_name" content="White Feather Supplies">
+  <meta property="og:url" content="https://whitefeathersupplies.com/">
+  <meta property="og:title" content="White Feather Supplies — Where Quality Meets Convenience">
+  <meta property="og:description" content="Discover crystal-clear, stackable airtight food storage containers for flour, sugar, grains, and pantry organization.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/studio/hero_kitchen.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/brand/favicon.png">
+  
+  <!-- Preconnect to Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       SECTION 1: ANNOUNCEMENT BAR
+       ══════════════════════════════════════════════════════════════════ -->
+  <aside class="announcement-bar" id="announcementBar" aria-label="Special Offers">
+    <div class="announcement-container">
+      <span class="announcement-text">
+        <span class="announcement-tag">PROMOTION</span>
+        Free standard shipping on all domestic orders over $50
+      </span>
+      <button type="button" class="announcement-dismiss" id="announcementDismiss" aria-label="Dismiss announcement">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       SECTION 2: STICKY HEADER WITH COMPACTING GLASSMORPHISM
+       ══════════════════════════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <div class="header-logo-wrap">
+        <a href="/" aria-label="White Feather Supplies Homepage">
+          <img src="assets/brand/white_feather_logo_dark.png" alt="White Feather Supplies Logo" class="header-logo" width="220" height="71" fetchpriority="high">
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="nav-link">Flour & Sugar Containers</a>
+        <a href="https://whitefeathersupplies.com/collections/pantry-storage-containers" class="nav-link">Pantry Containers</a>
+        <a href="https://whitefeathersupplies.com/blogs/kitchen-tips" class="nav-link">Kitchen Tips</a>
+        <a href="https://whitefeathersupplies.com/pages/about-us" class="nav-link">About Us</a>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <a href="https://whitefeathersupplies.com/search" class="icon-btn" aria-label="Search Catalog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <a href="https://whitefeathersupplies.com/account/login" class="icon-btn" aria-label="Account Login">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <a href="https://whitefeathersupplies.com/cart" class="icon-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count" id="headerCartCount" aria-label="0 items in cart">0</span>
+        </a>
+        <button type="button" class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="assets/brand/white_feather_logo_dark.png" alt="White Feather" width="160" height="52">
+        <button type="button" class="icon-btn" id="drawerClose" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="mobile-nav-link">Flour & Sugar Containers</a></li>
+        <li><a href="https://whitefeathersupplies.com/collections/pantry-storage-containers" class="mobile-nav-link">Pantry Containers</a></li>
+        <li><a href="https://whitefeathersupplies.com/collections/all" class="mobile-nav-link">All Products</a></li>
+        <li><a href="https://whitefeathersupplies.com/blogs/kitchen-tips" class="mobile-nav-link">Kitchen Tips</a></li>
+        <li><a href="https://whitefeathersupplies.com/pages/about-us" class="mobile-nav-link">About Us</a></li>
+        <li><a href="https://whitefeathersupplies.com/pages/shipping-policy" class="mobile-nav-link">Shipping Policy</a></li>
+        <li><a href="https://whitefeathersupplies.com/pages/return-exchange-policy" class="mobile-nav-link">Returns & Exchanges</a></li>
+      </ul>
+      <div style="margin-top: auto; padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
+        <p style="font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-bottom: var(--space-3);">Free shipping on orders over $50</p>
+        <a href="https://whitefeathersupplies.com/collections/all" class="btn btn-primary" style="width: 100%;">Shop Full Catalog</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 3: HERO — BENTO CARDS WITH IN-CARD SLIDERS
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="hero-section" aria-label="Featured Storage Solutions">
+      <div class="container">
+        <div class="hero-bento">
+
+          <!-- Main card: full-bleed lifestyle slider -->
+          <article class="bento-card bento-main" data-card-slider data-interval="4200" aria-roledescription="carousel" aria-label="Kitchen stories">
+            <div class="cs-viewport">
+              <figure class="cs-slide is-active"><img src="assets/studio/hero_kitchen.jpg" alt="Clear airtight containers of flour and oats on a cream kitchen counter in morning light" width="1200" height="900" fetchpriority="high"></figure>
+              <figure class="cs-slide"><img src="assets/studio/hero_pantry.jpg" alt="Cream pantry shelves lined with matching clear containers of pasta, rice and lentils" width="1200" height="900" loading="lazy"></figure>
+              <figure class="cs-slide"><img src="assets/studio/hero_baking.jpg" alt="Hands scooping flour from a clear container with a measuring cup" width="1200" height="900" loading="lazy"></figure>
+            </div>
+            <div class="cs-progress" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="bento-main-copy">
+              <span class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Airtight pantry storage</span>
+              <h1 class="hero-headline">A calmer pantry, <em>sealed</em> for the long run.</h1>
+              <p class="hero-intro-text">Clear, stackable containers with silicone-gasket lids that hold a whole bag of flour, rice or oats &mdash; fresh to the last scoop.</p>
+              <div class="hero-cta-group">
+                <a href="https://whitefeathersupplies.com/collections/all" class="btn btn-primary">Shop all containers <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+                <a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="btn btn-glass">Baking storage</a>
+              </div>
+            </div>
+            <div class="cs-controls">
+              <button type="button" class="cs-btn" data-cs-prev aria-label="Previous slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+              <button type="button" class="cs-btn" data-cs-next aria-label="Next slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+            </div>
+          </article>
+
+          <!-- Product card: 8.5L with product slider -->
+          <article class="bento-card bento-product" data-card-slider data-interval="3000" aria-roledescription="carousel" aria-label="8.5L container set">
+            <div class="bento-product-head">
+              <span class="bento-tag">Bestseller &middot; 8.5 L</span>
+              <div class="cs-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <div class="cs-viewport cs-viewport--product">
+              <figure class="cs-slide is-active"><img src="assets/studio/stack_studio.jpg" alt="Three clear airtight containers stacked on a cream backdrop" width="928" height="1152" loading="lazy"></figure>
+              <figure class="cs-slide"><img src="assets/studio/m85_lifestyle.jpg" alt="Flour and oat containers on a cream kitchen counter" width="896" height="896" loading="lazy"></figure>
+              <figure class="cs-slide"><img src="assets/studio/chalk_label.jpg" alt="Writing on a chalkboard label on a flour container" width="928" height="1152" loading="lazy"></figure>
+            </div>
+            <div class="bento-product-foot">
+              <div>
+                <h2 class="bento-product-title">The Extra-Large Set</h2>
+                <p class="bento-product-price"><span>$40.99</span> <s>$43.99</s></p>
+              </div>
+              <a href="https://whitefeathersupplies.com/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2" class="bento-round-btn" aria-label="Shop the 8.5L set"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+
+          <!-- Small card: 6.5L with quick slider -->
+          <article class="bento-card bento-mini bento-mini--sage" data-card-slider data-interval="2600" aria-label="6.5L container set">
+            <div class="cs-viewport cs-viewport--mini">
+              <figure class="cs-slide is-active"><img src="assets/studio/m65_clear.jpg" alt="6.5L containers with clear lids holding pasta and rice" width="1024" height="1024" loading="lazy"></figure>
+              <figure class="cs-slide"><img src="assets/studio/m65_grey.jpg" alt="6.5L containers with grey lids holding quinoa and oats" width="1024" height="1024" loading="lazy"></figure>
+              <figure class="cs-slide"><img src="assets/studio/m65_black.jpg" alt="6.5L containers with black lids holding coffee beans and lentils" width="1024" height="1024" loading="lazy"></figure>
+            </div>
+            <div class="bento-mini-copy">
+              <span class="bento-tag">Everyday &middot; 6.5 L</span>
+              <a href="https://whitefeathersupplies.com/products/6-5l-plastic-food-container-set-of-2" class="bento-mini-link">The Everyday Pair <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Small card: stat ticker -->
+          <article class="bento-card bento-mini bento-mini--cream" data-card-slider data-interval="2400" aria-label="Why it works">
+            <div class="cs-viewport cs-viewport--text">
+              <div class="cs-slide is-active"><strong class="bento-stat">10 lb</strong><span class="bento-stat-label">A full bag of flour, one pour</span></div>
+              <div class="cs-slide"><strong class="bento-stat">4</strong><span class="bento-stat-label">Locking clamps on every lid</span></div>
+              <div class="cs-slide"><strong class="bento-stat">0</strong><span class="bento-stat-label">BPA &mdash; food-grade plastic only</span></div>
+            </div>
+            <div class="cs-dots cs-dots--bottom" aria-hidden="true"><span></span><span></span><span></span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Ingredient marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Bread flour</span><i>&#10022;</i>
+        <span>Rolled oats</span><i>&#10022;</i>
+        <span>Basmati rice</span><i>&#10022;</i>
+        <span>Caster sugar</span><i>&#10022;</i>
+        <span>Red lentils</span><i>&#10022;</i>
+        <span>Coffee beans</span><i>&#10022;</i>
+        <span>Fusilli</span><i>&#10022;</i>
+        <span>Chickpeas</span><i>&#10022;</i>
+        <span>Bread flour</span><i>&#10022;</i>
+        <span>Rolled oats</span><i>&#10022;</i>
+        <span>Basmati rice</span><i>&#10022;</i>
+        <span>Caster sugar</span><i>&#10022;</i>
+        <span>Red lentils</span><i>&#10022;</i>
+        <span>Coffee beans</span><i>&#10022;</i>
+        <span>Fusilli</span><i>&#10022;</i>
+        <span>Chickpeas</span><i>&#10022;</i>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 4: TRUST STRIP
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="trust-strip" aria-label="Brand Guarantees">
+      <div class="container">
+        <div class="trust-grid">
+          
+          <div class="trust-item reveal-on-scroll">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">BPA-Free Food Grade</h3>
+              <p class="trust-desc">Safe, certified ABS & SAN plastic</p>
+            </div>
+          </div>
+
+          <div class="trust-item reveal-on-scroll">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Airtight Silicone Seal</h3>
+              <p class="trust-desc">4-sided locking clamp with blue gasket</p>
+            </div>
+          </div>
+
+          <div class="trust-item reveal-on-scroll">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Free Shipping Over $50</h3>
+              <p class="trust-desc">Automatic discount applied at checkout</p>
+            </div>
+          </div>
+
+          <div class="trust-item reveal-on-scroll">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">30-Day Easy Returns</h3>
+              <p class="trust-desc">Backed by our <a href="https://whitefeathersupplies.com/pages/return-exchange-policy" class="trust-link">returns policy</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         NEW: FRESHNESS BY THE NUMBERS
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="numbers-section" aria-label="Freshness by the numbers">
+      <div class="container numbers-grid">
+        <div class="numbers-media reveal-on-scroll">
+          <img src="assets/studio/seal_macro.jpg" alt="Close-up of a locking clamp and silicone gasket on a clear lid" width="800" height="1000" loading="lazy">
+          <span class="numbers-media-note">The blue gasket &mdash; where freshness is kept</span>
+        </div>
+        <div class="numbers-copy">
+          <span class="section-label reveal-on-scroll">Freshness, measured</span>
+          <h2 class="section-title reveal-on-scroll">Small details that keep a pantry honest.</h2>
+          <div class="numbers-list">
+            <div class="number-item reveal-on-scroll"><strong>8.5<small>L</small></strong><p>Our largest size holds a full commercial bag &mdash; no half-empty paper sack left over.</p></div>
+            <div class="number-item reveal-on-scroll"><strong>4<small>&times;</small></strong><p>Snap clamps press the lid evenly onto a food-grade silicone gasket.</p></div>
+            <div class="number-item reveal-on-scroll"><strong>18</strong><p>Reusable chalkboard labels included, so every shelf reads at a glance.</p></div>
+            <div class="number-item reveal-on-scroll"><strong>30<small>days</small></strong><p>To decide you love it, backed by our easy returns policy.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTIONS 5 & 6: THE PROBLEM & THE SOLUTION (Interactive Comparison)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="problem-solution-section" aria-label="Pantry Transformation Comparison">
+      <div class="container">
+        <div class="comparison-header reveal-on-scroll">
+          <span class="section-label">Before & After Transformation</span>
+          <h2 class="section-title">The Cost of Pantry Chaos vs. Sealed Symmetry</h2>
+          <p class="section-subtitle">Torn paper flour bags leak dust, open cardboard boxes allow cereal to go stale, and pantry moths thrive in dark corners. Drag the slider to experience the White Feather transformation.</p>
+        </div>
+
+        <div class="comparison-container" id="comparisonContainer">
+          <!-- After Image (Clean organized pantry) -->
+          <div class="comparison-image-after">
+            <img src="assets/generated/pantry_after.jpg" alt="Organized kitchen pantry with airtight modular clear storage containers" width="1040" height="585" loading="lazy">
+            <span class="comparison-label label-after">After: White Feather Sealed Freshness</span>
+          </div>
+
+          <!-- Before Image (Messy cluttered pantry with torn bags) -->
+          <div class="comparison-image-before" id="comparisonBefore">
+            <img src="assets/generated/pantry_before.jpg" alt="Messy kitchen shelf with spilled flour bags, bent cardboard boxes, and chip clips" width="1040" height="585" loading="lazy">
+            <span class="comparison-label label-before">Before: Clutter, Spills & Stale Staples</span>
+          </div>
+
+          <!-- Draggable Divider Handle -->
+          <div class="comparison-handle" id="comparisonHandle" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Comparison slider handle" tabindex="0">
+            <div class="comparison-knob">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 18 2 12 8 6"></polyline>
+                <polyline points="16 6 22 12 16 18"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <p class="comparison-hint">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          Drag handle horizontally or use Left / Right arrow keys to compare
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 7: BEST SELLERS (Live Purchasable Products Only)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="bestsellers-section" aria-label="Bestselling Containers">
+      <div class="container">
+        <div class="bestsellers-header reveal-on-scroll">
+          <div>
+            <span class="section-label">Proven Kitchen Staples</span>
+            <h2 class="section-title">Verified Customer Favorites</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">Direct from White Feather Supplies · Live catalog availability</p>
+          </div>
+          <a href="https://whitefeathersupplies.com/collections/all" class="btn btn-secondary">View All Containers</a>
+        </div>
+
+        <div class="products-grid">
+
+          <!-- Product Card 1: 8.5L Extra-Large Set of 2 -->
+          <article class="product-card reveal-on-scroll">
+            <div class="product-media-wrap">
+              <div class="product-badge-group">
+                <span class="product-badge-save">Save $3.00 (7% OFF)</span>
+                <span class="product-badge-feature">Includes 2 Cups + Labels</span>
+              </div>
+              <img src="assets/studio/m85_stack_square.jpg" alt="8.5L Extra-Large Plastic Food Storage Containers Set of 2" class="product-img-primary" width="600" height="600" loading="lazy">
+              <img src="assets/studio/m85_lifestyle.jpg" alt="8.5L Extra-Large Containers with measuring cups and labels accessories" class="product-img-secondary" width="600" height="600" loading="lazy">
+              <button type="button" class="quick-view-trigger" data-quick-view="8.5L">Quick View</button>
+            </div>
+            <div class="product-body">
+              <div class="swatch-group" aria-label="Available lid color finishes">
+                <button type="button" class="swatch-btn is-selected" data-color="clear" data-target-img="assets/studio/m85_stack_square.jpg" aria-label="Clear Lid"></button>
+              </div>
+              <h3 class="product-card-title">
+                <a href="https://whitefeathersupplies.com/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2">8.5L Extra-Large Plastic Food Storage Containers – Set of 2</a>
+              </h3>
+              <p class="product-card-specs">Dimensions: 7.87"W x 5.51"L x 11.96"H · Fits 10 lb Flour</p>
+              <div class="product-card-footer">
+                <div>
+                  <span style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-text-primary);">$40.99</span>
+                  <span style="font-size: var(--font-size-sm); color: var(--color-text-tertiary); text-decoration: line-through; margin-left: 6px;">$43.99</span>
+                </div>
+                <a href="https://whitefeathersupplies.com/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2" class="btn btn-primary" style="min-height: 40px; padding: var(--space-2) var(--space-4);">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2: 6.5L Set of 2 -->
+          <article class="product-card reveal-on-scroll">
+            <div class="product-media-wrap">
+              <div class="product-badge-group">
+                <span class="product-badge-save">Save $4.00 (9% OFF)</span>
+                <span class="product-badge-feature">Includes 18 Labels + 2 Cups</span>
+              </div>
+              <img src="assets/studio/m65_clear.jpg" alt="6.5L Plastic Food Storage Containers Set of 2 with Clear Lids" class="product-img-primary" width="600" height="600" loading="lazy">
+              <img src="assets/studio/chalk_label.jpg" alt="Labelling a container with a chalk marker" class="product-img-secondary" width="600" height="600" loading="lazy">
+              <button type="button" class="quick-view-trigger" data-quick-view="6.5L">Quick View</button>
+            </div>
+            <div class="product-body">
+              <div class="swatch-group" aria-label="Available lid color finishes">
+                <button type="button" class="swatch-btn is-selected" data-color="clear" data-target-img="assets/studio/m65_clear.jpg" aria-label="Clear Lid"></button>
+                <button type="button" class="swatch-btn" data-color="black" data-target-img="assets/studio/m65_black.jpg" aria-label="Black Lid"></button>
+                <button type="button" class="swatch-btn" data-color="grey" data-target-img="assets/studio/m65_grey.jpg" aria-label="Grey Lid"></button>
+              </div>
+              <h3 class="product-card-title">
+                <a href="https://whitefeathersupplies.com/products/6-5l-plastic-food-container-set-of-2">6.5L Plastic Food Containers – Set of 2</a>
+              </h3>
+              <p class="product-card-specs">Dimensions: 6.8"W x 6.0"L x 11.2"H · Fits 8 lb Rice or Grains</p>
+              <div class="product-card-footer">
+                <div>
+                  <span style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-text-primary);">$40.99</span>
+                  <span style="font-size: var(--font-size-sm); color: var(--color-text-tertiary); text-decoration: line-through; margin-left: 6px;">$44.99</span>
+                </div>
+                <a href="https://whitefeathersupplies.com/products/6-5l-plastic-food-container-set-of-2" class="btn btn-primary" style="min-height: 40px; padding: var(--space-2) var(--space-4);">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         NEW: WHAT WILL YOU KEEP? (Ingredient switcher)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="keep-section" aria-label="What fits inside">
+      <div class="container">
+        <div class="keep-head reveal-on-scroll">
+          <span class="section-label">What will you keep?</span>
+          <h2 class="section-title">One container, a whole pantry of uses.</h2>
+        </div>
+        <div class="keep-grid">
+          <div class="keep-media reveal-on-scroll">
+            <img src="assets/studio/flatlay_grains.jpg" alt="Overhead view of open containers filled with rice, oats, sugar, lentils and pasta" width="1000" height="1000" loading="lazy">
+          </div>
+          <div class="keep-tabs" role="tablist" aria-label="Ingredients">
+            <button type="button" class="keep-tab is-active" role="tab" aria-selected="true">
+              <span class="keep-tab-name">Flour &amp; sugar</span>
+              <span class="keep-tab-fit">8.5 L &middot; a 10 lb bag</span>
+              <span class="keep-tab-body">Wide mouth for a level scoop, sealed against clumps and pantry moths.</span>
+            </button>
+            <button type="button" class="keep-tab" role="tab" aria-selected="false">
+              <span class="keep-tab-name">Rice &amp; grains</span>
+              <span class="keep-tab-fit">6.5 L &middot; 8&ndash;10 lb</span>
+              <span class="keep-tab-body">Jasmine, basmati, quinoa or lentils &mdash; dry, visible and easy to pour.</span>
+            </button>
+            <button type="button" class="keep-tab" role="tab" aria-selected="false">
+              <span class="keep-tab-name">Oats &amp; cereal</span>
+              <span class="keep-tab-fit">6.5 L &middot; family boxes</span>
+              <span class="keep-tab-body">Stays crisp for weeks once the cardboard box is gone.</span>
+            </button>
+            <button type="button" class="keep-tab" role="tab" aria-selected="false">
+              <span class="keep-tab-name">Pasta &amp; snacks</span>
+              <span class="keep-tab-fit">Either size</span>
+              <span class="keep-tab-body">Fusilli, pretzels, coffee beans or kibble &mdash; all on one uniform footprint.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 8: FEATURE DEEP-DIVE (Scroll-Driven Apple Style)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="deepdive-section" aria-label="Architectural Hardware Engineering">
+      <div class="container">
+        <div class="deepdive-header reveal-on-scroll">
+          <span class="section-label">Engineering Precision</span>
+          <h2 class="section-title">Anatomy of an Airtight Container</h2>
+          <p class="section-subtitle">Obsessively designed to preserve texture, fragrance, and nutritional integrity. Discover the five layers of White Feather food preservation technology.</p>
+        </div>
+
+        <div class="deepdive-grid">
+          <!-- Pinned Visual Presentation -->
+          <div class="deepdive-visual-container">
+            <div class="deepdive-img-frame">
+              <img src="assets/studio/seal_macro.jpg" alt="Airtight container lid, clamp and gasket detail" id="deepdiveImg" class="deepdive-img" width="440" height="520" loading="lazy">
+              
+              <button type="button" class="deepdive-hotspot hotspot-gasket is-active" data-step="1" aria-label="Inspect blue silicone gasket">1</button>
+              <button type="button" class="deepdive-hotspot hotspot-clarity" data-step="2" aria-label="Inspect SAN crystal body">2</button>
+              <button type="button" class="deepdive-hotspot hotspot-measuring" data-step="3" aria-label="Inspect measuring cup accessories">3</button>
+            </div>
+            <div class="deepdive-spec-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+              <span>Exact 8.5L Dimensions: 7.87"W × 5.51"L × 11.96"H</span>
+            </div>
+          </div>
+
+          <!-- Feature Breakdown Steps -->
+          <div class="deepdive-features-list">
+            
+            <div class="deepdive-feature-card is-active" data-step="1">
+              <span class="feature-step-num">Step 01 · Airtight Seal</span>
+              <h3 class="feature-title">Hermetic Blue Silicone Gasket</h3>
+              <p class="feature-desc">A flexible food-grade silicone ring embedded into the perimeter lid groove. Coupled with four heavy-duty snap clamps, it forms an absolute barrier against air humidity, ambient kitchen moisture, and pantry pests.</p>
+            </div>
+
+            <div class="deepdive-feature-card" data-step="2">
+              <span class="feature-step-num">Step 02 · Optical Polymer</span>
+              <h3 class="feature-title">Crystal-Clear BPA-Free SAN Body</h3>
+              <p class="feature-desc">Engineered with high-tensile Styrene Acrylonitrile (SAN) plastic offering the refractive beauty of flint glass with lightweight, shatterproof drop resilience. Never clouding, never absorbing food odors.</p>
+            </div>
+
+            <div class="deepdive-feature-card" data-step="3">
+              <span class="feature-step-num">Step 03 · Portion Calibration</span>
+              <h3 class="feature-title">Matching Precision Measuring Cups</h3>
+              <p class="feature-desc">Every 2-pack comes equipped with two calibrated measuring scoops. Designed with flat-edge contours to scrape clean against the container's interior wall without leaving trapped residue at the bottom.</p>
+            </div>
+
+            <div class="deepdive-feature-card" data-step="4">
+              <span class="feature-step-num">Step 04 · Visual Organization</span>
+              <h3 class="feature-title">Waterproof Chalkboard Labels & Marker</h3>
+              <p class="feature-desc">Identify baking staples, purchase dates, and expiration markers instantly. Labels can be wiped clean with a damp towel and rewritten hundreds of times without peeling.</p>
+            </div>
+
+            <div class="deepdive-feature-card" data-step="5">
+              <span class="feature-step-num">Step 05 · Vertical Efficiency</span>
+              <h3 class="feature-title">Interlocking Stackable Footprint</h3>
+              <p class="feature-desc">Recessed lid rims match the bottom container geometry perfectly. Stack multiple units vertically with zero risk of slippage, reclaiming up to 40% of standard cabinet shelf real estate.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 9: VISUAL SIZE GUIDE
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="sizeguide-section" aria-label="Capacity and Sizing Guide">
+      <div class="container">
+        <div class="sizeguide-header reveal-on-scroll">
+          <span class="section-label">Volume & Capacity Guide</span>
+          <h2 class="section-title">Choose The Right Volume For Your Needs</h2>
+          <p class="section-subtitle">Based exclusively on real verified catalog capacities. See exactly how grocery store package sizes fit into our storage footprint.</p>
+        </div>
+
+        <div class="sizeguide-grid">
+
+          <!-- 8.5L Card -->
+          <div class="sizeguide-card reveal-on-scroll">
+            <div class="sizeguide-header-box">
+              <div>
+                <span class="hero-badge" style="margin-bottom: var(--space-2);">Extra-Large Volume</span>
+                <div class="sizeguide-capacity">8.5 Liters</div>
+              </div>
+              <span class="sizeguide-dim">7.87"W × 5.51"L × 11.96"H</span>
+            </div>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+              Engineered for bulk storage of high-frequency culinary staples. Holds full commercial bags without awkward leftovers.
+            </p>
+            <ul class="sizeguide-fits-list">
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>10 lb Full Bag</strong> of All-Purpose or Bread Flour</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>8 to 9 lb</strong> of Granulated White or Raw Sugar</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>12 to 14 lb</strong> of Jasmine, Basmati, or Long-Grain Rice</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>Medium Bags</strong> of Dry Dog or Cat Kibble</span>
+              </li>
+            </ul>
+            <a href="https://whitefeathersupplies.com/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2" class="btn btn-primary" style="margin-top: auto; width: 100%;">Shop 8.5L Containers ($40.99)</a>
+          </div>
+
+          <!-- 6.5L Card -->
+          <div class="sizeguide-card reveal-on-scroll">
+            <div class="sizeguide-header-box">
+              <div>
+                <span class="hero-badge" style="margin-bottom: var(--space-2);">Mid-Large Volume</span>
+                <div class="sizeguide-capacity">6.5 Liters</div>
+              </div>
+              <span class="sizeguide-dim">6.80"W × 6.00"L × 11.20"H</span>
+            </div>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+              The versatile daily workhorse for standard pantry dry goods, whole grains, snacks, and medium baking volumes.
+            </p>
+            <ul class="sizeguide-fits-list">
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>7 to 8 lb</strong> of Baking Flour or Cornmeal</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>6 lb Bag</strong> of Confectioners or Brown Sugar</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>8 to 10 lb</strong> of Grains, Lentils, or Dry Beans</span>
+              </li>
+              <li class="fits-item">
+                <span class="fits-icon">✓</span>
+                <span><strong>Large Family Boxes</strong> of Cereal, Pretzels, or Pasta</span>
+              </li>
+            </ul>
+            <a href="https://whitefeathersupplies.com/products/6-5l-plastic-food-container-set-of-2" class="btn btn-primary" style="margin-top: auto; width: 100%;">Shop 6.5L Containers ($40.99)</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         NEW: BAKER'S CORNER (Editorial split)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="baker-section" aria-label="For the home baker">
+      <div class="container baker-grid">
+        <div class="baker-copy reveal-on-scroll">
+          <span class="section-label">The baker&rsquo;s corner</span>
+          <blockquote class="baker-quote">&ldquo;Good bread starts long before the oven &mdash; it starts with flour that&rsquo;s been kept dry, light and ready.&rdquo;</blockquote>
+          <ul class="baker-points">
+            <li><span>01</span>Pour a whole bag in once, then scoop straight from the container.</li>
+            <li><span>02</span>Date the chalk label so the oldest flour gets used first.</li>
+            <li><span>03</span>Keep it away from the stove &mdash; the gasket handles the humidity.</li>
+          </ul>
+          <a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="btn btn-secondary">Shop baking storage <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="baker-media reveal-on-scroll">
+          <img src="assets/studio/baker_sourdough.jpg" alt="Sourdough loaf beside a clear airtight flour container" width="800" height="1000" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 10: SHOP BY COLLECTION
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="collections-section" aria-label="Curated Storage Collections">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-12);" class="reveal-on-scroll">
+          <span class="section-label">Curated Systems</span>
+          <h2 class="section-title">Explore Storage By Room & Task</h2>
+          <p class="section-subtitle">Tailored modular systems crafted to elevate your daily culinary workflow.</p>
+        </div>
+
+        <div class="collections-grid">
+          
+          <!-- Tile 1: Flour & Sugar -->
+          <a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="collection-tile reveal-on-scroll">
+            <img src="assets/generated/collection_flour_sugar.jpg" alt="Flour & Sugar Containers collection on marble island" class="collection-tile-bg" width="600" height="450" loading="lazy">
+            <div class="collection-tile-overlay"></div>
+            <div class="collection-tile-content">
+              <span class="hero-badge" style="background: rgba(255, 255, 255, 0.2); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.4);">Baking Solutions</span>
+              <h3 class="collection-tile-title">Flour & Sugar Containers</h3>
+              <p class="collection-tile-desc">Sealed airtight protection with wide-mouth openings for clean, effortless scoop measuring.</p>
+              <span class="btn btn-secondary" style="background: rgba(255, 255, 255, 0.95); width: fit-content;">Explore Baking Series →</span>
+            </div>
+          </a>
+
+          <!-- Tile 2: Pantry Containers -->
+          <a href="https://whitefeathersupplies.com/collections/pantry-storage-containers" class="collection-tile reveal-on-scroll">
+            <img src="assets/generated/collection_pantry.jpg" alt="Pantry Storage Containers on wooden shelves" class="collection-tile-bg" width="600" height="450" loading="lazy">
+            <div class="collection-tile-overlay"></div>
+            <div class="collection-tile-content">
+              <span class="hero-badge" style="background: rgba(255, 255, 255, 0.2); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.4);">Pantry Architecture</span>
+              <h3 class="collection-tile-title">Pantry Storage Containers</h3>
+              <p class="collection-tile-desc">Modular, stackable vertical footprints engineered for standard depth cabinetry and open shelving.</p>
+              <span class="btn btn-secondary" style="background: rgba(255, 255, 255, 0.95); width: fit-content;">Explore Pantry Series →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 11: REVIEWS & TESTIMONIALS (Transparent Placeholders)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="reviews-section" aria-label="Customer Experiences">
+      <div class="container">
+        <div class="reviews-header reveal-on-scroll">
+          <span class="section-label">Editorial Perspectives</span>
+          <h2 class="section-title">Designed For Everyday Homes</h2>
+          <p class="section-subtitle">Real experiences from home bakers, passionate cooks, and pantry organizers.</p>
+        </div>
+
+        <!-- PLACEHOLDER: replace with real reviews when verified customer feedback is collected -->
+        <div class="reviews-grid">
+          
+          <div class="review-card reveal-on-scroll">
+            <blockquote class="review-quote">
+              “The 8.5L is genuinely the only container I have tested that swallows an entire 10-pound bag of King Arthur bread flour with room to spare for the measuring cup.”
+            </blockquote>
+            <div class="review-author">Verified Home Baker · Hudson Valley, NY</div>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <blockquote class="review-quote">
+              “The blue silicone gasket seals with an authoritative click. Our pantry in humid South Carolina used to lose brown sugar to clumps every month—no longer.”
+            </blockquote>
+            <div class="review-author">Pantry Enthusiast · Charleston, SC</div>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <blockquote class="review-quote">
+              “The modular height fits standard 12-inch shelves with millimeter precision. Having matching reusable labels and cups in the box made setup an afternoon joy.”
+            </blockquote>
+            <div class="review-author">Kitchen Stylist · Portland, OR</div>
+          </div>
+
+        </div>
+        <!-- /PLACEHOLDER -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 12: REAL FAQ ACCORDION
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="faq-section" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="faq-header reveal-on-scroll">
+          <span class="section-label">Clarity & Confidence</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Direct answers regarding container capacities, material safety, care guidelines, and sealing mechanics.</p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can I use these containers for ingredients other than flour and sugar?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Absolutely! White Feather containers are completely versatile and ideal for storing a wide range of dry staples including whole oats, grains, lentils, dried beans, jasmine and basmati rice, pasta, whole coffee beans, snacks, and pet food.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>What sizes are currently available in the White Feather collection?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We currently produce two core capacity formats: our Flagship <strong>8.5 Liter</strong> container set (7.87"W × 5.51"L × 11.96"H) for bulk staple storage, and our versatile <strong>6.5 Liter</strong> container set (6.8"W × 6.0"L × 11.2"H) for daily grains, snacks, and pantry organization.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Are the containers genuinely airtight and leak-proof?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes. Every container utilizes a perimeter blue silicone gasket embedded into the lid combined with four reinforced side-locking snap clamps. This dual-action compression creates a hermetic barrier that locks out ambient humidity, oxygen, and pantry pests.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can these containers be placed in the refrigerator or freezer?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes, our SAN and ABS polymers are freezer-safe and refrigerator-safe, making them excellent for preserving bulk yeast, nuts, whole grain flours, or chilled dry goods. Note: Containers are <em>not suitable for microwave or conventional oven use</em>.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How should I clean my White Feather storage containers?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                For optimal long-term optical clarity and to preserve the elastic tension of the blue silicone gasket, we recommend hand washing with warm water and mild dish soap. Avoid high-heat industrial drying cycles to ensure your airtight seal remains factory-precise for years to come.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Do measuring cups and labels come included in the box?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes! Every 8.5L and 6.5L set ships complete with matching calibrated measuring cups, waterproof reusable chalkboard labels, and a liquid white chalk marker so you can organize immediately upon arrival.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 13: KITCHEN TIPS (Real Published Blog Articles)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="blog-section" aria-label="Kitchen Tips & Pantry Wisdom">
+      <div class="container">
+        <div class="blog-header reveal-on-scroll">
+          <div>
+            <span class="section-label">Pantry Journal</span>
+            <h2 class="section-title">Tips For Long-Term Kitchen Freshness</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">Expert advice on moisture prevention, pest control, and bulk ingredient storage.</p>
+          </div>
+          <a href="https://whitefeathersupplies.com/blogs/kitchen-tips" class="btn btn-secondary">Read All Articles</a>
+        </div>
+
+        <div class="blog-grid">
+
+          <!-- Post 1: 10 lb Rice Container -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-media">
+              <img src="assets/generated/blog_rice_storage.jpg" alt="Clear container holding 10 lb bag of rice with measuring scoop" class="blog-img" width="600" height="338" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Capacity Guide</span>
+              <h3 class="blog-title">
+                <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/container-size-for-10-lb-bag-of-rice">Container Size for a 10 lb Bag of Rice</a>
+              </h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-4);">
+                Learn why standard 5L jars fall short and how our 8.5L footprint accommodates bulk jasmine and basmati without overflow.
+              </p>
+              <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/container-size-for-10-lb-bag-of-rice" class="blog-link">Read Full Guide →</a>
+            </div>
+          </article>
+
+          <!-- Post 2: Long-Term Oats Storage -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-media">
+              <img src="assets/generated/blog_oats_freshness.jpg" alt="Airtight container filled with rolled oats in morning kitchen light" class="blog-img" width="600" height="338" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Preservation Tips</span>
+              <h3 class="blog-title">
+                <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/how-to-store-oats-long-term-airtight-containers">How to Store Oats Long-Term in Airtight Containers</a>
+              </h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-4);">
+                Protect whole grain lipids from turning rancid by eliminating oxygen transfer with food-grade silicone compression seals.
+              </p>
+              <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/how-to-store-oats-long-term-airtight-containers" class="blog-link">Read Full Guide →</a>
+            </div>
+          </article>
+
+          <!-- Post 3: Keep Pantry Moths Out -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-media">
+              <img src="assets/generated/blog_pantry_moths.jpg" alt="Sealed container on clean shelf preventing kitchen pantry pests" class="blog-img" width="600" height="338" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Pest Prevention</span>
+              <h3 class="blog-title">
+                <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/how-to-keep-pantry-moths-out-of-flour">How to Keep Pantry Moths Out of Your Baking Flour</a>
+              </h3>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-4);">
+                Paper packaging provides zero defense against grain weevils. Discover the three essential steps for moth-proofing your pantry.
+              </p>
+              <a href="https://whitefeathersupplies.com/blogs/kitchen-tips/how-to-keep-pantry-moths-out-of-flour" class="blog-link">Read Full Guide →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         NEW: EDITORIAL BANNER
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="banner-section" aria-label="Made for the kitchen you love">
+      <div class="container">
+        <div class="banner-card reveal-on-scroll">
+          <img src="assets/studio/kitchen_wide.jpg" alt="Bright cream kitchen with open shelves of clear storage containers" width="1600" height="900" loading="lazy">
+          <div class="banner-panel">
+            <span class="section-label">Made to be seen</span>
+            <h2 class="section-title">Storage you won&rsquo;t want to hide behind a door.</h2>
+            <a href="https://whitefeathersupplies.com/collections/pantry-storage-containers" class="btn btn-primary">Explore pantry storage <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 14: NEWSLETTER SIGNUP (Front-End State Machine)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="newsletter-section" aria-label="Join White Feather Newsletter">
+      <div class="container">
+        <div class="newsletter-card reveal-on-scroll">
+          <span class="section-label">Community & Savings</span>
+          <h2 class="section-title">Elevate Your Kitchen Sanctuary</h2>
+          <p class="section-subtitle">Subscribe for pantry styling guides, seasonal kitchen tips, and an instant 10% welcome discount on your initial storage set.</p>
+          
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+          <div class="newsletter-success" id="newsletterSuccess" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       SECTION 15: FOOTER (Brand Family, Links, Socials, Payments)
+       ══════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="footer-brand-info">
+          <a href="/" aria-label="White Feather Supplies">
+            <img src="assets/brand/white_feather_logo.png" alt="White Feather Supplies" class="footer-logo" width="220" height="71" loading="lazy">
+          </a>
+          <p style="font-size: var(--font-size-sm); color: rgba(255, 255, 255, 0.75); line-height: 1.6; max-width: 320px;">
+            Where Quality Meets Convenience. Dedicated to providing premium, long-lasting airtight storage solutions that transform everyday kitchen pantries.
+          </p>
+          <div class="footer-social-row" aria-label="Follow us on social media">
+            <a href="https://www.facebook.com/people/White-Feather-Supplies/61574874282650/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/whitefeathersupplies/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.pinterest.com/Whitefeathersupplies1/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <circle cx="12" cy="12" r="9"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://whitefeathersupplies.com/pages/about-us" class="footer-link">About Us</a></li>
+            <li><a href="https://whitefeathersupplies.com/collections/all" class="footer-link">All Products</a></li>
+            <li><a href="https://whitefeathersupplies.com/blogs/kitchen-tips" class="footer-link">Kitchen Tips & Blog</a></li>
+            <li><a href="https://whitefeathersupplies.com/pages/shipping-policy" class="footer-link">Shipping Policy</a></li>
+            <li><a href="https://whitefeathersupplies.com/pages/return-exchange-policy" class="footer-link">Return & Exchange Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Popular Products -->
+        <div>
+          <h4 class="footer-col-title">Popular Products</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://whitefeathersupplies.com/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2" class="footer-link">8.5L Extra-Large Containers (Set of 2)</a></li>
+            <li><a href="https://whitefeathersupplies.com/products/6-5l-plastic-food-container-set-of-2" class="footer-link">6.5L Plastic Food Containers (Set of 2)</a></li>
+            <li><a href="https://whitefeathersupplies.com/collections/flour-sugar-storage-containers" class="footer-link">Flour & Sugar Storage Set</a></li>
+            <li><a href="https://whitefeathersupplies.com/collections/pantry-storage-containers" class="footer-link">Modular Pantry System</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Customer Care & Policies -->
+        <div>
+          <h4 class="footer-col-title">Brand Assurance</h4>
+          <ul class="footer-links-list">
+            <li style="color: rgba(255, 255, 255, 0.7);">Free US shipping over $50</li>
+            <li style="color: rgba(255, 255, 255, 0.7);">30-Day Hassle-Free Returns</li>
+            <li style="color: rgba(255, 255, 255, 0.7);">100% BPA-Free Certified</li>
+            <li style="color: rgba(255, 255, 255, 0.7);">Secure SSL Encrypted Checkout</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p style="font-size: var(--font-size-xs); color: rgba(255, 255, 255, 0.6);">
+          © 2026 White Feather Supplies. All rights reserved.
+        </p>
+
+        <!-- Payment Badges Supported -->
+        <div class="footer-payments-row" aria-label="Accepted payment methods">
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Amex</span>
+          <span class="payment-badge">Apple Pay</span>
+          <span class="payment-badge">Google Pay</span>
+          <span class="payment-badge">PayPal</span>
+          <span class="payment-badge">Shop Pay</span>
+          <span class="payment-badge">Discover</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       QUICK VIEW MODAL DIALOG
+       ══════════════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="quickViewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-gallery">
+        <img src="assets/studio/m85_stack_square.jpg" alt="Selected container product photograph" id="modalImg" class="modal-img" width="400" height="400" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="modal-body">
+        <span class="section-label" style="margin-bottom: var(--space-2);">In Stock · Ships Within 24h</span>
+        <h2 id="modalTitle" style="font-size: var(--font-size-xl); font-family: var(--font-serif); margin-bottom: var(--space-2);">8.5L Container Set</h2>
+        
+        <div style="display: flex; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-4);">
+          <span id="modalPrice" style="font-size: var(--font-size-xl); font-weight: 700; color: var(--color-text-primary);">$40.99</span>
+          <span id="modalCompare" style="font-size: var(--font-size-md); color: var(--color-text-tertiary); text-decoration: line-through;">$43.99</span>
+          <span id="modalSavings" class="product-badge-save">Save 7%</span>
+        </div>
+
+        <p id="modalSpecs" style="font-size: var(--font-size-xs); font-weight: 600; color: var(--color-accent-gasket-dark); margin-bottom: var(--space-3);"></p>
+        <p id="modalDesc" style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-6); line-height: 1.6;"></p>
+
+        <div style="margin-bottom: var(--space-6);">
+          <label style="display: block; font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase; margin-bottom: var(--space-2);">Select Lid Color</label>
+          <div class="swatch-group" id="modalSwatches"></div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+          <div style="display: inline-flex; align-items: center; border: 1px solid var(--color-border); border-radius: var(--radius-pill); overflow: hidden; background: var(--color-bg-surface);">
+            <button type="button" id="modalQtyMinus" style="padding: 10px 16px; font-weight: 700; font-size: 16px;" aria-label="Decrease quantity">−</button>
+            <input type="number" id="modalQtyInput" value="1" min="1" max="99" style="width: 44px; text-align: center; font-weight: 600;" aria-label="Selected quantity">
+            <button type="button" id="modalQtyPlus" style="padding: 10px 16px; font-weight: 700; font-size: 16px;" aria-label="Increase quantity">+</button>
+          </div>
+          <button type="button" class="btn btn-primary" id="modalAddToCart" style="flex-grow: 1;">Add to Cart</button>
+        </div>
+
+        <a id="modalFullLink" href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">View Full Product Specs & Care →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Item added to cart! Free shipping over $50 applied.</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

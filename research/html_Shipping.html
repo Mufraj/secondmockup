@@ -1,0 +1,2663 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(l,r)=>{for(let f=l;f;f=Object.getPrototypeOf(f)){let y=Object.getOwnPropertyDescriptor(f,r);if(y)return y}throw new TypeError(`${r} is not defined`)},u=(l,r)=>s(yt(l,r).get),B=(l,r)=>s(yt(l,r).set);var Se=s(String.prototype.endsWith),k=s(RegExp.prototype.exec),Re=/^_(self|top|parent)$/i,xe=/(^|\s)noreferrer(\s|$)/i,ht=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,Pe=/^(never|default|always|origin-when-crossorigin)$/i,Et=/^(no-referrer|same-origin|never)$/i,mt=l=>{let r=`.${l}`;return f=>f===l||Se(f,r)},wt=(l,r,f)=>l!==void 0&&(l.protocol==="https:"||l.protocol==="http:")&&l.origin!==r&&!f(l.hostname),bt=(l,r,f)=>l!==null&&k(xe,l)!==null?!0:r!==null&&k(ht,r)!==null?k(Et,r)!==null:f,_t=(l,r)=>k(ht,l)!==null||k(Pe,l)!==null?k(Et,l)!==null:r,A=(l,{metaKey:r,ctrlKey:f,shiftKey:y,button:S})=>l&&k(Re,l)===null?l:r||f||y||S===1?"_blank":"";var Le="http://www.w3.org/2000/svg",Oe="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function kt(l){let r=window;if(r.top!==r)return;let f=document,y=r.navigation,S=location.origin,v=URL,q=u(v.prototype,"href"),vt=u(v.prototype,"origin"),Nt=u(v.prototype,"protocol"),St=u(v.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Rt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),xt=u(Event.prototype,"type"),Pt=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),Lt=u(Event.prototype,"bubbles"),Ot=u(Event.prototype,"currentTarget"),At=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:It}=Event,z=u(Event.prototype,"cancelBubble"),Tt=B(Event.prototype,"cancelBubble"),Wt=u(MouseEvent.prototype,"button"),Mt=u(MouseEvent.prototype,"metaKey"),Ct=u(MouseEvent.prototype,"ctrlKey"),Dt=u(MouseEvent.prototype,"shiftKey"),Ft=y&&u(NavigateEvent.prototype,"destination"),Ht=y&&u(NavigationDestination.prototype,"url"),J=y&&u(NavigateEvent.prototype,"navigationType"),$t=y&&u(NavigateEvent.prototype,"formData"),Q=y&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,m=s(Element.prototype.getAttribute),Kt=s(Element.prototype.getAttributeNS),I=s(Element.prototype.setAttribute),Ut=u(Element.prototype,"localName"),Bt=u(Element.prototype,"namespaceURI"),Gt=s(Document.prototype.querySelector),qt=s(Document.prototype.querySelectorAll),Yt=u(NodeList.prototype,"length"),jt=s(NodeList.prototype.item),T=u(Node.prototype,"baseURI"),Vt=s(Document.prototype.createElement),Xt=s(HTMLElement.prototype.click),zt=s(r.open),Jt=s(location.assign),Qt=s(location.replace),Zt=encodeURIComponent,te=s(String.prototype.startsWith),Z=s(r.setTimeout),ee=s(r.addEventListener),ne=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},oe={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,re=WeakSet,st=s(WeakMap.prototype.get),se=s(WeakMap.prototype.set),ce=s(WeakMap.prototype.delete),ie=s(WeakSet.prototype.add),ae=s(WeakSet.prototype.has),le=mt(l.site),ct=q(new v(l.exitPath,S)),ue=`${ct}?`,P=(t,e)=>{try{let n=new v(t,e);return{href:q(n),origin:vt(n),protocol:Nt(n),hostname:St(n)}}catch{return}},pe=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${Zt(t.href)}&trigger=${e}${o}`},it=()=>{let t=qt(f,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Yt(t);n+=1)e=_t(m(jt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:i})=>{let d=pe(t,e,o);if(n){zt(r,d,n,"noopener");return}(i?Qt:Jt)(location,d)},W=t=>wt(t,S,le),L=0,M,C=!1,fe=t=>{if(L>0){M=t;return}t()},de=t=>{if(L-=1,t&&(C=!0),L>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},ge=t=>t!==void 0&&te(t.href,ue),lt=t=>{try{return Ut(t)}catch{return}},ut=t=>bt(m(t,"rel"),m(t,"referrerpolicy"),it()),ye=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},he=t=>{let e=P(Ht(Ft(t)));if(ge(e)){j(t);return}if(!Pt(t)||J(t)==="traverse"||!W(e)||$t(t)!==null)return;Y(t);let n={target:"",noReferrer:ye(t),replaces:J(t)==="replace"};fe(()=>at(e,"navigate",n))},R=t=>{let e=m(t,"href");return e===null&&Bt(t)===Le?Kt(t,Oe,"href"):e},Ee=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],i=lt(o);if(i==="a"||i==="area"){let d=R(o);if(d!==null)return{node:o,href:d}}}},D=t=>{let e=m(t,"target");if(e!==null)return e;let n=Gt(f,"base[target]");return n?m(n,"target"):""},me=t=>{try{return{metaKey:Mt(t),ctrlKey:Ct(t),shiftKey:Dt(t),button:Wt(t)}}catch{return}},pt=new re,we=t=>{let e=!1,n=()=>{e=!0},o=()=>e||ae(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:i=>{i||n()}}}),o},be={click:new rt,auxclick:new rt},_e=(t,e)=>{let n=oe[t],o=be[t],i=[],d=p=>{for(let a=0;a<i.length;a+=1)if(i[a]===p)return!0;return!1},w=(p,a,E)=>{let g=s(E);function O(_){let x=g(this,_);return x===!1&&typeof _=="object"&&_!==null&&ie(pt,_),x}return{target:p,accessor:a,handler:E,wrapper:O,inFlight:0}},b=()=>{for(let p=0;p<e.length;p+=1)for(let a=0;a<n.length;a+=1){let E;try{E=n[a].get(e[p])}catch{continue}if(typeof E=="function"){let g=st(o,e[p]);(!g||g.wrapper!==E)&&(g=w(e[p],n[a],E),n[a].set(e[p],g.wrapper),se(o,e[p],g)),d(g)||(g.inFlight+=1,i[i.length]=g)}break}};return b(),{wrap:b,unwrap:()=>{for(let p=0;p<i.length;p+=1){let a=i[p];a.inFlight-=1,!(a.inFlight>0)&&(st(o,a.target)===a&&ce(o,a.target),a.accessor.get(a.target)===a.wrapper&&a.accessor.set(a.target,a.handler))}}}},ft=(t,e,n)=>{let o=R(t),i=o===null?void 0:P(o,T(f));if(!W(i))return;let d={target:A(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:d.target==="",go:()=>at(i,e,d)}},dt=t=>{let e=R(t);if(e===null||m(t,"download")===null)return!1;let n=P(e,T(f));return n!==void 0&&(n.origin===S||n.protocol==="blob:"||n.protocol==="data:")},ke=(t,e)=>R(t)!==null&&!dt(t)&&A(D(t),e)==="",ve=(t,e)=>{let n=R(t);if(n===null)return!1;let o=Vt(f,"a"),i=A(D(t),e);I(o,"href",n),I(o,"target",i||"_self");for(let d=0;d<G.length;d+=1){let w=m(t,G[d]);w!==null&&I(o,G[d],w)}return Xt(o),i===""&&!dt(t)},Ne=(t,e,n,o)=>{L+=1;let i=V(t),d=i.length-1,w=0,b=!1,F=!1,p=c=>{F||(F=!0,de(c))},a=c=>{if(b)return;b=!0;let N=X(t),h=N?void 0:ft(n,e,o),U;!N&&(h||c)&&(Y(t),U=we(t)),Z(r,()=>{if(!U){p(!X(t)&&ke(n,o));return}if(U()){p(!1);return}if(c&&(h=ft(n,e,o),!h)){p(ve(n,o));return}h.go(),p(h.inWindow)},0)},E=(c,N)=>{for(let h=0;h<i.length;h+=1)if(i[h]===c)return N===It?d-h:i.length+h;return-1},g=()=>{E(Ot(t),At(t))<=w&&a(!0)},O=c=>{c===t&&a(!1)},_=_e(e,i),x=c=>N=>{if(N===t){if(w=c,z(t)){a(!1);return}_.wrap()}},H=[],$=[],K=Lt(t);if(K){for(let c=0;c<d;c+=1)H[c]=x(d-c),$[c]=x(i.length+c),tt(i[c],e,H[c],!0),tt(i[c],e,$[c],!1);ee(r,e,O,!1)}if(Z(r,()=>{if(b||p(!1),b=!0,_.unwrap(),!!K){for(let c=0;c<d;c+=1)et(i[c],e,H[c],!0),et(i[c],e,$[c],!1);ne(r,e,O,!1)}},0),!K){a(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{g(),Rt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{a(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:c=>{c&&g(),Tt(t,c)}}})},gt=t=>{let e=xt(t),n=me(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=Ee(t);!o||!W(P(o.href,T(f)))||Ne(t,e,o.node,n)};y?.addEventListener("navigate",he,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}kt({"site":"whitefeathersupplies.com","exitPath":"\/url"});})();
+//# sourceURL=exit-interstitial.js
+</script>
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="google-site-verification" content="hljvWoKyOD9S-kriRheeOPcJm4uTNMrvQ1r--d-T7Fc" /><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/swiper-bundle.min.css?v=127370101718424465871741284160" rel="stylesheet" type="text/css" media="all" />
+  <link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/photoswipe.min.css?v=165459975419098386681741284160" rel="stylesheet" type="text/css" media="all" />
+  <link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/theme.min.css?v=69547489316746713911741284161" rel="stylesheet" type="text/css" media="all" />
+  <link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/custom.css?v=154853012711652072991780513034" rel="stylesheet" type="text/css" media="all" />
+
+  
+    <link rel="shortcut icon" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=180&v=1719009323&width=180" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=180&v=1719009323&width=180">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=180&v=1719009323&width=180">
+    <link rel="icon" type="image/png" sizes="32x32" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=32&v=1719009323&width=32">
+    <link rel="icon" type="image/png" sizes="194x194" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=194&v=1719009323&width=194">
+    <link rel="icon" type="image/png" sizes="192x192" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=192&v=1719009323&width=192">
+    <link rel="icon" type="image/png" sizes="16x16" href="//whitefeathersupplies.com/cdn/shop/files/favicon-01.jpg?crop=center&height=16&v=1719009323&width=16">
+  
+
+    <link rel="preload" as="font" href="//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" type="font/woff2" crossorigin>
+    
+
+    <link rel="preload" as="font" href="//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" type="font/woff2" crossorigin>
+    
+<!-- Title and description ================================================== -->
+  <title>
+    Shipping Policy &ndash; White Feather Supplies
+  </title>
+
+  
+    <meta name="description" content="Please carefully review our Shipping &amp;amp; Delivery Policy when buying products from White Feather Supplies. This policy will apply to any order you place on White Feather Supplies. Shipping &amp;amp; Delivery Welcome to the shipping policy of White Feather Supplies! We strive to provide all our customers with a seamless a">
+  
+
+  <!-- Helpers ================================================== -->
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+<meta property="og:site_name" content="White Feather Supplies">
+<meta property="og:url" content="https://whitefeathersupplies.com/pages/shipping-policy">
+<meta property="og:title" content="Shipping Policy">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Please carefully review our Shipping &amp;amp; Delivery Policy when buying products from White Feather Supplies. This policy will apply to any order you place on White Feather Supplies. Shipping &amp;amp; Delivery Welcome to the shipping policy of White Feather Supplies! We strive to provide all our customers with a seamless a">
+
+<meta property="og:image" content="http:Liquid error (snippets/social-meta-tags line 8): invalid url input">
+<meta property="og:image:alt" content="White Feather Supplies">
+<meta property="og:image:secure_url" content="https:Liquid error (snippets/social-meta-tags line 9): invalid url input">
+
+
+<meta name="x:card" content="summary_large_image">
+<meta name="x:title" content="Shipping Policy">
+<meta name="x:description" content="Please carefully review our Shipping &amp;amp; Delivery Policy when buying products from White Feather Supplies. This policy will apply to any order you place on White Feather Supplies. Shipping &amp;amp; Delivery Welcome to the shipping policy of White Feather Supplies! We strive to provide all our customers with a seamless a">
+
+  <link rel="canonical" href="https://whitefeathersupplies.com/pages/shipping-policy"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#242424">
+
+  <!-- CSS ================================================== -->
+  <style>
+/*============================================================================
+  #Typography
+==============================================================================*/
+
+
+
+
+
+
+@font-face {
+  font-family: Jost;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff") format("woff");
+}
+
+@font-face {
+  font-family: Jost;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff") format("woff");
+}
+
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_i4.b690098389649750ada222b9763d55796c5283a5.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_i4.fd766415a47e50b9e391ae7ec04e2ae25e7e28b0.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("//whitefeathersupplies.com/cdn/fonts/jost/jost_i7.d8201b854e41e19d7ed9b1a31fe4fe71deea6d3f.woff2") format("woff2"),
+       url("//whitefeathersupplies.com/cdn/fonts/jost/jost_i7.eae515c34e26b6c853efddc3fc0c552e0de63757.woff") format("woff");
+}
+
+
+
+
+
+
+
+
+
+/*============================================================================
+  #General Variables
+==============================================================================*/
+
+:root {
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-header-bold: 700;
+
+  --header-font-stack: Jost, sans-serif;
+  --header-font-weight: 400;
+  --header-font-style: normal;
+  --header-text-size: 30;
+  --header-text-size-px: 30px;
+  --header-mobile-text-size-px: 22px;
+
+  --header-font-case: uppercase;
+  --header-font-size: 20;
+  --header-font-size-px: 20px;
+
+  --heading-spacing: 0.01em;
+  --heading-line-height: 1.2;
+  --heading-font-case: uppercase;
+  --heading-font-stack: FontDrop;
+
+  --body-font-stack: Jost, sans-serif;
+  --body-font-weight: 400;
+  --body-font-style: normal;
+
+  --button-font-stack: Jost, sans-serif;
+  --button-font-weight: 400;
+  --button-font-style: normal;
+
+  --label-font-stack: Jost, sans-serif;
+  --label-font-weight: 400;
+  --label-font-style: normal;
+  --label-font-case: uppercase;
+  --label-spacing: 0px;
+
+  --navigation-font-stack: Jost, sans-serif;
+  --navigation-font-weight: 400;
+  --navigation-font-style: normal;
+  --navigation-font-letter-spacing: 1;
+
+  --base-font-size-int: 16;
+  --base-font-size: 16px;
+
+  --body-font-size-12-to-em: 0.75em;
+  --body-font-size-16-to-em: 1.0em;
+  --body-font-size-22-to-em: 1.38em;
+  --body-font-size-28-to-em: 1.75em;
+  --body-font-size-36-to-em: 2.25em;
+
+  /* Heading Sizes */
+
+  
+  --h1-size: 38px;
+  --h2-size: 30px;
+  --h3-size: 26px;
+  --h4-size: 23px;
+  --h5-size: 19px;
+  --h6-size: 16px;
+
+  --sale-badge-color: #494949;
+  --sold-out-badge-color: #494949;
+  --custom-badge-color: #494949;
+  --preorder-badge-color: #494949;
+  --badge-font-color: #ffffff;
+
+  --primary-btn-text-color: #ffffff;
+  --primary-btn-text-color-opacity50: rgba(255, 255, 255, 0.5);
+  --primary-btn-bg-color: #8b0000;
+  --primary-btn-bg-color-opacity50: rgba(139, 0, 0, 0.5);
+
+  --button-text-case: uppercase;
+  --button-font-size: 14;
+  --button-font-size-px: 14px;
+  --button-text-spacing-px: 1px;
+
+  
+    --text-line-clamp: none;
+  
+
+  
+
+  --text-color: #242424;
+  --text-color-lighten5: #313131;
+  --text-color-lighten70: #d7d7d7;
+  --text-color-transparent05: rgba(36, 36, 36, 0.05);
+  --text-color-transparent10: rgba(36, 36, 36, 0.1);
+  --text-color-transparent15: rgba(36, 36, 36, 0.15);
+  --text-color-transparent25: rgba(36, 36, 36, 0.25);
+  --text-color-transparent30: rgba(36, 36, 36, 0.3);
+  --text-color-transparent40: rgba(36, 36, 36, 0.4);
+  --text-color-transparent50: rgba(36, 36, 36, 0.5);
+  --text-color-transparent5: rgba(36, 36, 36, 0.5);
+  --text-color-transparent6: rgba(36, 36, 36, 0.6);
+  --text-color-transparent7: rgba(36, 36, 36, 0.7);
+  --text-color-transparent8: rgba(36, 36, 36, 0.8);
+
+  
+    --heading-xl-font-size: 28px;
+    --heading-l-font-size: 22px;
+    --subheading-font-size: 20px;
+  
+
+  
+    --small-body-font-size: 14px;
+  
+
+  --link-color: #242424;
+  --on-sale-color: #dc3545;
+
+  --body-color: #ffffff;
+  --body-color-darken10: #e6e6e6;
+  --body-color-transparent00: rgba(255, 255, 255, 0);
+  --body-color-transparent40: rgba(255, 255, 255, 0.4);
+  --body-color-transparent50: rgba(255, 255, 255, 0.5);
+  --body-color-transparent90: rgba(255, 255, 255, 0.9);
+
+  --body-secondary-color: #f9f9fb;
+  --body-secondary-color-transparent00: rgba(249, 249, 251, 0);
+  --body-secondary-color-darken05: #eaeaf1;
+
+  --color-primary-background: #ffffff;
+  --color-primary-background-rgb: 255, 255, 255;
+  --color-secondary-background: #f9f9fb;
+
+  --border-color: rgba(36, 36, 36, 0.25);
+  --link-border-color: rgba(36, 36, 36, 0.5);
+  --border-color-darken10: #0a0a0a;
+  --view-in-space-button-background: #f2f2f2;
+
+  --header-color: #242424;
+  --header-color-darken5: #171717;
+
+  --header-border-color: #242424;
+
+  --announcement-text-size: 13px;
+  --announcement-text-spacing: 0px;
+
+  --logo-font-size: 18px;
+
+  --overlay-header-text-color: #262428;
+  --nav-text-color: #ffffff;
+  --nav-text-color-transparent10: rgba(255, 255, 255, 0.1);
+  --nav-text-color-transparent30: rgba(255, 255, 255, 0.3);
+  --nav-text-hover: #737373;
+
+  --color-scheme-light-background: #f9f9fb;
+  --color-scheme-light-background-transparent40: rgba(249, 249, 251, 0.4);
+  --color-scheme-light-background-transparent50: rgba(249, 249, 251, 0.5);
+  --color-scheme-light-background-lighten5: #ffffff;
+  --color-scheme-light-background-rgb: 249, 249, 251;
+  --color-scheme-light-text: #242424;
+  --color-scheme-light-text-transparent10: rgba(36, 36, 36, 0.1);
+  --color-scheme-light-text-transparent25: rgba(36, 36, 36, 0.25);
+  --color-scheme-light-text-transparent40: rgba(36, 36, 36, 0.4);
+  --color-scheme-light-text-transparent50: rgba(36, 36, 36, 0.5);
+  --color-scheme-light-text-transparent60: rgba(36, 36, 36, 0.6);
+
+  --color-scheme-feature-background: #e6e5e7;
+  --color-scheme-feature-background-transparent40: rgba(230, 229, 231, 0.4);
+  --color-scheme-feature-background-transparent50: rgba(230, 229, 231, 0.5);
+  --color-scheme-feature-background-lighten5: #f3f2f3;
+  --color-scheme-feature-background-rgb: 230, 229, 231;
+  --color-scheme-feature-text: #242424;
+  --color-scheme-feature-text-transparent10: rgba(36, 36, 36, 0.1);
+  --color-scheme-feature-text-transparent25: rgba(36, 36, 36, 0.25);
+  --color-scheme-feature-text-transparent40: rgba(36, 36, 36, 0.4);
+  --color-scheme-feature-text-transparent50: rgba(36, 36, 36, 0.5);
+  --color-scheme-feature-text-transparent60: rgba(36, 36, 36, 0.6);
+
+  --homepage-sections-accent-secondary-color-transparent60: rgba(36, 36, 36, 0.6);
+
+  --color-scheme-dark-background: #494949;
+  --color-scheme-dark-background-transparent40: rgba(73, 73, 73, 0.4);
+  --color-scheme-dark-background-transparent50: rgba(73, 73, 73, 0.5);
+  --color-scheme-dark-background-rgb: 73, 73, 73;
+  --color-scheme-dark-text: #ffffff;
+  --color-scheme-dark-text-transparent10: rgba(255, 255, 255, 0.1);
+  --color-scheme-dark-text-transparent25: rgba(255, 255, 255, 0.25);
+  --color-scheme-dark-text-transparent40: rgba(255, 255, 255, 0.4);
+  --color-scheme-dark-text-transparent50: rgba(255, 255, 255, 0.5);
+  --color-scheme-dark-text-transparent60: rgba(255, 255, 255, 0.6);
+
+  --filter-bg-color: rgba(36, 36, 36, 0.1);
+
+  --menu-drawer-color: #fff;
+  --menu-drawer-color-darken5: #f2f2f2;
+  --menu-drawer-text-color: #262428;
+  --menu-drawer-text-color-transparent10: rgba(38, 36, 40, 0.1);
+  --menu-drawer-text-color-transparent30: rgba(38, 36, 40, 0.3);
+  --menu-drawer-border-color: rgba(38, 36, 40, 0.25);
+  --menu-drawer-text-hover-color: #737373;
+
+  --cart-drawer-color: #ffffff;
+  --cart-drawer-color-transparent50: rgba(255, 255, 255, 0.5);
+  --cart-drawer-text-color: #242424;
+  --cart-drawer-text-color-transparent10: rgba(36, 36, 36, 0.1);
+  --cart-drawer-text-color-transparent25: rgba(36, 36, 36, 0.25);
+  --cart-drawer-text-color-transparent40: rgba(36, 36, 36, 0.4);
+  --cart-drawer-text-color-transparent50: rgba(36, 36, 36, 0.5);
+  --cart-drawer-text-color-transparent70: rgba(36, 36, 36, 0.7);
+  --cart-drawer-text-color-lighten10: #3e3e3e;
+  --cart-drawer-border-color: rgba(36, 36, 36, 0.25);
+
+  --success-color: #28a745;
+  --error-color: #DC3545;
+  --warning-color: #EB9247;
+
+  /* Shop Pay Installments variables */
+  --color-body: #f9f9fb;
+  --color-bg: #f9f9fb;
+
+  /* Checkbox */
+  --checkbox-size: 16px;
+  --inline-icon-size: 16px;
+  --line-height-base: 1.6;
+
+  /* Grid spacing */
+  --grid-spacing: 10px;
+  
+    --grid-spacing-tight: 10px;
+  
+}
+</style>
+
+
+  <style data-shopify>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+      background-color: var(--body-color);
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-color: var(--body-color);
+      min-height: 100%;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 100%;
+      overflow-x: hidden;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    .sr-only-focusable:active, .sr-only-focusable:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+  </style>
+
+  <!-- Header hook for plugins ================================================== -->
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="Rr-RFFpLC8r-uY2fozlaUxeNUnxSEU_bqP2z8ULBgp8">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/86383886643/digital_wallets/dialog">
+<meta id="in-context-paypal-metadata" data-shop-id="86383886643" data-venmo-supported="false" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><script async="async" src="/checkouts/internal/preloads.js?locale=en-US"></script>
+<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
+<script async="async" src="https://shop.app/checkouts/internal/preloads.js?locale=en-US&shop_id=86383886643" crossorigin="anonymous"></script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":86383886643,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/86383886643","merchantName":"White Feather Supplies","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"White Feather Supplies","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"55da7594e716636b7d2519d60489c83a","betas":["rich-media-storefront-analytics"],"domain":"whitefeathersupplies.com","predictiveSearch":true,"shopId":86383886643,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "848984-3.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Updated copy of Updated copy of Flow","id":176614244659,"schema_name":"Flow","schema_version":"39.8.0","theme_store_id":801,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "whitefeathersupplies.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"page"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"d2hpdGVmZWF0aGVyc3VwcGxpZXMuY29t"});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/cdn2.ryviu.com\/v\/static\/js\/app.js?shop=848984-3.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":86383886643,"offset":-18000,"reqid":"c824dc81-4d11-477e-86c8-d9606b7c6fe3-1793129902","pageurl":"whitefeathersupplies.com\/pages\/shipping-policy","s":"pages-134218121523","u":"f932cbd9db7c","p":"page","rtyp":"page","rid":134218121523};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//whitefeathersupplies.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//whitefeathersupplies.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script crossorigin="anonymous" defer="defer" src="//whitefeathersupplies.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-f0e26bdf.js?v=20250812"></script>
+<script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/whitefeathersupplies.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://whitefeathersupplies.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://whitefeathersupplies.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+  <script defer src="//whitefeathersupplies.com/cdn/shop/t/5/assets/eventBus.js?v=100401504747444416941741284160"></script>
+
+  <script type="text/javascript">
+		window.wetheme = {
+			name: 'Flow',
+			webcomponentRegistry: {
+        registry: {},
+				checkScriptLoaded: function(key) {
+					return window.wetheme.webcomponentRegistry.registry[key] ? true : false
+				},
+        register: function(registration) {
+            if(!window.wetheme.webcomponentRegistry.checkScriptLoaded(registration.key)) {
+              window.wetheme.webcomponentRegistry.registry[registration.key] = registration
+            }
+        }
+      }
+    };
+	</script>
+
+  
+
+  
+
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R0QVTDXZDW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R0QVTDXZDW');
+</script>
+
+<!--  no-index start pages -->
+
+
+
+
+
+<!--  no-index end pages -->
+
+  
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/W5p54C/klaviyo.js?company_id=W5p54C"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/ryviu-product-reviews/blocks/ryviu-js/807ad6ed-1a6a-4559-abea-ed062858d9da -->
+<script>
+  // RYVIU APP :: Settings
+  var ryviu_global_settings = {"form":{"showTitle":true,"titleForm":"Write a review","titleName":"Your Name","colorInput":"#464646","colorTitle":"#696969","noticeName":"Your name is required field","titleEmail":"Your Email","autoPublish":true,"colorNotice":"#dd2c00","colorSubmit":"#ffffff","noticeEmail":"Your email is required and valid email","titleSubmit":"Submit Your Review","titleSubject":"Review Title","titleSuccess":"Thank you! Your review is submited.","colorStarForm":"#ececec","noticeSubject":"Title is required field","showtitleForm":true,"titleMessenger":"Review Content","noticeMessenger":"Your review is required field","placeholderName":"John Smith","starActivecolor":"#fdbc00","backgroundSubmit":"#00aeef","placeholderEmail":"example@yourdomain.com","placeholderSubject":"Look great","placeholderMessenger":"Write something","loadAfterContentLoaded":true},"questions":{"by_text":"Author","of_text":"of","on_text":"am","des_form":"Ask a question to the community here","name_form":"Your Name","email_form":"Your E-Mail Adresse","input_text":"Have a question? Search for answers","title_form":"No answer found?","answer_form":"Your answers","answer_text":"Answer question","newest_text":"Latest New","notice_form":"Complete before submitting","submit_form":"Send a question","helpful_text":"Most helpful","showing_text":"Show","question_form":"Your question","titleCustomer":"","community_text":"Ask the community here","questions_text":"questions","title_answer_form":"Answer question","ask_community_text":"Ask the community","submit_answer_form":"Send a reply","write_question_text":"Ask a question","question_answer_form":"Question","placeholder_answer_form":"Answer is a required field!","placeholder_question_form":"Question is a required field!"},"review_widget":{"star":1,"style":"style2","title":true,"ofText":"of","tstar1":"Terrible","tstar2":"Poor","tstar3":"Average","tstar4":"Very Good","tstar5":"Excellent","nostars":false,"nowrite":false,"hideFlag":false,"hidedate":false,"noavatar":false,"noreview":true,"order_by":"late","showText":"Show:","showspam":true,"noReviews":"No reviews","outofText":"out of","random_to":20,"ryplyText":"Comment","starStyle":"style1","starcolor":"#e6e6e6","starsText":"stars","colorTitle":"#6c8187","colorWrite":"#ffffff","customDate":"dd\/MM\/yy","dateSelect":"dateDefaut","helpulText":"Is this helpful?","latestText":"Latest","nolastname":false,"oldestText":"Oldest","paddingTop":"0","reviewText":"review","sortbyText":"Sort by:","starHeight":13,"titleWrite":"Write a review","borderColor":"#ffffff","borderStyle":"solid","borderWidth":"0","colorAvatar":"#f8f8f8","firstReview":"Write a first review now","paddingLeft":"0","random_from":0,"reviewsText":"reviews","showingText":"Showing","disableReply":true,"paddingRight":"0","payment_type":"Monthly","textVerified":"Verified Purchase","colorVerified":"#05d92d","disableHelpul":false,"disableWidget":false,"paddingBottom":"0","titleCustomer":"Customer Reviews","disbaleMoreImg":true,"filter_reviews":"all","autoHeightImage":true,"backgroundRyviu":"transparent","backgroundWrite":"#ffb102","disablePurchase":false,"starActiveStyle":"style1","starActivecolor":"#fdbc00","infoProductFeature":false,"show_title_customer":false,"filter_reviews_local":"US"},"design_settings":{"date":"timeago","sort":"late","showing":30,"colection":true,"no_number":false,"no_review":true,"colorModal":"#333333","defautDate":"timeago","defaultDate":"timeago","client_theme":"masonry","verify_reply":true,"verify_review":true,"backgroundModal":"#ffffff","reviews_per_page":"10","aimgs":false}};
+  
+  try {
+    if (typeof ryviu_global_settings === 'string') {
+      ryviu_global_settings = JSON.parse(ryviu_global_settings);
+    }
+  } catch (e) {
+    console.error("Error parsing ryviu_global_settings", e);
+  }
+  var ryviu_version = '2';
+  if (typeof Shopify !== 'undefined' && Shopify.designMode && document.documentElement) {
+    document.documentElement.classList.add('ryviu-shopify-mode');
+  }
+
+  // Locale-aware widget text: merge the shopper's page-locale translation blob
+  // (saved by the admin Translate / Widget Translation page as a per-language
+  // metafield) onto ryviu_global_settings. Applies to every widget architecture
+  // version — v1/v2 load ryviu.min.js via a legacy ScriptTag rather than the
+  // script tag below, but they read window.ryviu_global_settings the same way.
+  if(ryviu_global_settings && ryviu_global_settings.design_settings && ryviu_global_settings.design_settings.show_widget_reviews_by_market){window.__ryviu_locale_key__ = 'en';}
+</script>
+
+
+<!-- END app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 86383886643,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 86383886643,storefrontBaseUrl: "https://whitefeathersupplies.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://whitefeathersupplies.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","4c64608a"],webPixelsConfigList: [{"id":"1855160627","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"GT-M3LWS4SQ\\\"],\\\"gtag_events\\\":[{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":\\\"MC-W5EMKQSVQY\\\"},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":\\\"MC-W5EMKQSVQY\\\"},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":\\\"MC-W5EMKQSVQY\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1812463923","configuration":"{\"accountID\":\"W5p54C\",\"webPixelConfig\":\"eyJlbmFibGVBZGRlZFRvQ2FydEV2ZW50cyI6IHRydWV9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"3fe25e975c30cd2a9af38a04798704c0","type":"APP","apiClientId":123074,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"White Feather Supplies","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"848984-3.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/whitefeathersupplies.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://whitefeathersupplies.com/cdn","78841ebdw6fd1eda2peb7ac126m6aaa99ab",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"176614244659","themeStoreId":"801","themePublished":"true","eventMetadataId":"8362b14d-304a-4264-9329-2f552c18dc2c","pageType":"page","resourceId":"134218121523","shopId":"86383886643","storefrontBaseUrl":"https:\/\/whitefeathersupplies.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"78841ebdw6fd1eda2peb7ac126m6aaa99ab","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":134218121523,"requestId":"c824dc81-4d11-477e-86c8-d9606b7c6fe3-1793129902"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 86383886643,
+      theme_id: 176614244659,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//whitefeathersupplies.com/cdn/s/trekkie.storefront.6efba1340ec6769622eb0d10b5cb070d43fb8d55.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//whitefeathersupplies.com/cdn/s/trekkie.storefront.6efba1340ec6769622eb0d10b5cb070d43fb8d55.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//whitefeathersupplies.com/cdn/s/trekkie.storefront.6efba1340ec6769622eb0d10b5cb070d43fb8d55.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":86383886643,"isMerchantRequest":null,"themeId":176614244659,"themeCityHash":"5439750053022071932","contentLanguage":"en","currency":"USD","eventMetadataId":"8362b14d-304a-4264-9329-2f552c18dc2c"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":134218121523,"requestId":"c824dc81-4d11-477e-86c8-d9606b7c6fe3-1793129902","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//whitefeathersupplies.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+<script
+  defer
+  src="https://whitefeathersupplies.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="86383886643"
+  data-render-region="gcp-europe-west1"
+  data-page-type="page"
+  data-theme-instance-id="176614244659"
+  data-theme-name="Flow"
+  data-theme-version="39.8.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://whitefeathersupplies.com/api/collect"
+></script>
+<meta name="shopify-y" content="d35940fd-89f4-49a9-8bff-2d7dbf88dda9" data-expiration="1824687502000"><meta name="shopify-s" content="e1a7ae64-0919-4f46-8993-ca648d451758" data-expiration="1793131702000"><meta name="request-id" content="c824dc81-4d11-477e-86c8-d9606b7c6fe3-1793129902"        >
+</head>
+
+
+<body id="shipping-policy" class="template-page page-fade hover-zoom-enabled ">
+  <a class="btn skip-to-content-link sr-only" href="#MainContent">
+    Skip to content
+  </a>
+
+  <noscript><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/swiper-bundle.min.css?v=127370101718424465871741284160" rel="stylesheet" type="text/css" media="all" /></noscript>
+  <noscript><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/photoswipe.min.css?v=165459975419098386681741284160" rel="stylesheet" type="text/css" media="all" /></noscript>
+  
+  	<noscript><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/animate.min.css?v=68297775102622399721741284161" rel="stylesheet" type="text/css" media="all" /></noscript>
+  
+  <noscript><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/custom.css?v=154853012711652072991780513034" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+  
+  <safe-load-scripts class="hidden">
+    <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-cart-quantity.js?v=70295216213169132451741284161" type="module" defer="defer" data-flow-load-key="component-cart-quantity"></script>
+  </safe-load-scripts>
+  <safe-load-scripts class="hidden">
+    <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-cart-update.js?v=38903525079000161031741284160" type="module" defer="defer" data-flow-load-key="component-cart-update"></script>
+  </safe-load-scripts>
+  
+
+  
+  
+    <safe-load-scripts class="hidden">
+      <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-cart-drawer.js?v=65263691251320179841741284160" type="module" defer="defer" data-flow-load-key="component-cart-drawer"></script>
+    </safe-load-scripts>
+    <safe-load-scripts class="hidden">
+      <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-cart-update-modal.js?v=86464604851413727601741284161" type="module" defer="defer" data-flow-load-key="component-cart-update-modal"></script>
+    </safe-load-scripts>
+    
+      <safe-load-scripts class="hidden">
+        <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-cart-recommendations.js?v=151411547966132855211741284160" type="module" defer="defer" data-flow-load-key="component-cart-recommendations"></script>
+      </safe-load-scripts>
+      
+    
+
+<cart-drawer
+  aria-modal="true"
+  role="dialog"
+  aria-hidden="true"
+  class="global-drawer"
+  data-drawer-position="right"
+>
+  <span data-drawer-close class="global-drawer__overlay"></span>
+  <div class="global-drawer__content">
+
+    <header class="global-drawer__sticky-header">
+      <button
+        data-drawer-close
+        type="button"
+        aria-label="Close"
+        class="global-drawer__close"
+      >
+        <span class="fallback-text">Close</span>
+        
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5.63086 14.3692L10 10L14.3692 14.3692M14.3692 5.63086L9.99919 10L5.63086 5.63086" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+      </button>
+      <div data-cart-dynamic-content="cart-header">
+        <h3 class="cart-drawer__heading">Cart (0)</h3>
+      </div>
+    </header>
+
+    <div
+      class="global-drawer__body global-drawer__body--with-padding cart-drawer__body"
+      data-cart-dynamic-content="cart-body"
+      data-cart-scroll-element
+    >
+      <div class="global-drawer__body--content">
+        
+
+          <div class="cart-drawer__empty-container">
+            
+              <div class="cart-drawer__empty-message text-link-animated">Your cart is currently empty.</div>
+            
+
+            <div class="cart-drawer__empty-btn-container">
+              
+                <a class="btn dynamic-section-button--drawer-filled cart-drawer__empty-btn" href="/collections/all">Return to shop</a>
+              
+            </div>
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+
+    <div class="global-drawer__sticky-bottom" data-cart-dynamic-content="cart-footer">
+
+      
+
+    </div>
+  </div>
+</cart-drawer>
+  
+
+  
+  <div class="right-drawer-vue">
+  
+  <wetheme-right-drawer
+    search-url="/search/suggest.json"
+    is-predictive="true"
+    search-collections=""
+    language-url="/"
+  >
+  </wetheme-right-drawer>
+</div>
+<script type="text/x-template" id="wetheme-right-drawer-template">
+  <div>
+    <transition name="drawer-right">
+      <div :class="[type === 'page' ? 'display-flex' : '']" class="drawer drawer--right drawer--cart" v-if="isOpen" ref="drawerRight">
+        <div :class="[type === 'page' ? 'display-flex' : '', 'drawer__header', 'sitewide--title-wrapper']">
+          <div class="drawer__close js-drawer-close">
+            <button type="button" class="icon-fallback-text standalone-icon--wrapper" aria-label="Close" ref="drawerClose" v-on:click="close">
+              <span class="fallback-text">Close</span>
+              
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5.63086 14.3692L10 10L14.3692 14.3692M14.3692 5.63086L9.99919 10L5.63086 5.63086" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+            </button>
+          </div>
+          <input ref="drawerFocus" tabindex="-1" aria-hidden="true" class="sr-only" />
+          <div :class="[type === 'page' ? 'remove-margin' : '', 'drawer__title', 'h2', 'true']">
+            <span class="sr-only" v-if="type === 'page'">Size guide</span>
+            <span v-if="type === 'search'">Search</span>
+          </div>
+        </div>
+
+        
+
+        <div id="SearchContainer" v-if="type === 'search'">
+          <div class="search-drawer">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button aria-label="Search" type="submit" class="search-input--btn icon-fallback-text standalone-icon--wrapper" v-on:click="onSearchSubmit" tabindex="0">
+                  
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M14.1667 14.1667L17.5 17.5M2.5 9.16667C2.5 10.9348 3.20238 12.6305 4.45262 13.8807C5.70286 15.131 7.39856 15.8333 9.16667 15.8333C10.9348 15.8333 12.6305 15.131 13.8807 13.8807C15.131 12.6305 15.8333 10.9348 15.8333 9.16667C15.8333 7.39856 15.131 5.70286 13.8807 4.45262C12.6305 3.20238 10.9348 2.5 9.16667 2.5C7.39856 2.5 5.70286 3.20238 4.45262 4.45262C3.20238 5.70286 2.5 7.39856 2.5 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                  <span class="fallback-text">Search</span>
+                </button>
+              </span>
+              <div class="search-input-group">
+                <input
+                  type="search" name="q" id="search-input" placeholder="Search our store"
+                  class="input-group-field" aria-label="Search our store" autocomplete="off" autocorrect="off" spellcheck="false" ref="searchText"
+                  v-model="searchQuery" @keydown.enter="onSearchSubmit"
+                />
+                <button type="button" aria-label="Clear" class="search-drawer--clear icon-fallback-text standalone-icon--wrapper" v-if="searchQuery.length > 0" v-on:click="clearSearchInput">
+                  <span class="fallback-text">Clear</span>
+                  
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5.63086 14.3692L10 10L14.3692 14.3692M14.3692 5.63086L9.99919 10L5.63086 5.63086" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                </button>
+              </div>
+            </div>
+            <div class="wrapper-padded">
+              <div id="search-results" class="grid-uniform">
+                <div v-if="searching" class="search-loading standalone-icon--wrapper loading-state-icon">
+                  
+
+
+
+
+    <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="spin flex-full"> <g clip-path="url(#clip0_3605_47041)"> <path d="M12.5 23C6.42487 23 1.5 18.0751 1.5 12C1.5 5.92487 6.42487 1 12.5 1C18.5751 1 23.5 5.92487 23.5 12C23.5 15.1767 22.1534 18.0388 20 20.0468" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></g><defs><clipPath id="clip0_3605_47041"><rect width="24" height="24" fill="none" transform="translate(0.5)"/></clipPath></defs></svg>
+  <span class="sr-only">loading...</span>
+                </div>
+                <div v-text="searchSummary" v-if="!searching"></div>
+                <div class="search-results__meta top" v-if="searchHasResults">
+                  <div class="search-results__meta-view-all"><span id="search-show-more" class="search-show-more--btn"><a v-bind:href="searchPageUrlWithQuery">View all results</a></span></div>
+                </div>
+                <div class="" v-for="group in searchGroups" v-if="!searching">
+                  <h2 v-text="group.name" v-if="group.results.length"></h2>
+                  <div class="indiv-search-listing-grid" v-for="result in group.results">
+                    <div class="grid">
+                      <div class="grid__item large--one-fifth live-search--image" v-if="result.featured_image">
+                        <a v-bind:href="`${result.url}`" v-bind:title="result.title">
+                          <span v-if="result.featured_image.url">
+                            <img
+                              class="theme-img" 
+                              loading="lazy"
+                              v-bind:src="result.featured_image.url"
+                              v-bind:alt="result.featured_image.alt"
+                            />
+                          </span>
+                        </a>
+                      </div>
+                      <div class="grid__item line-search-content" :class="(result.image || result.featured_image) ? 'large--four-fifths' : 'large--one-whole'">
+                        
+                        <h5>
+                          <a v-bind:href="`${result.url}`" v-html="result.title ? result.title : result.styled_text"></a>
+                        </h5>
+                        <div v-if="!result.available && group.name == 'Products'">Sold out</div>
+                        
+                        <div v-if="result.price" v-html="result.price"></div>
+                        
+                      </div>
+                    </div>
+                    <span class="search-drawer-separator" v-if="group.results.length"><hr /></span>
+                  </div>
+                </div>
+                <div class="search-results__meta bottom" v-if="searchHasResults">
+                  <div class="search-results__meta-view-all"><span id="search-show-more" class="search-show-more--btn"><a v-bind:href="searchPageUrlWithQuery">View all results</a></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="PageContainer" v-if="type === 'page'">
+          <div ref="pageContent"></div>
+        </div>
+      </div>
+    </transition>
+  </div>
+</script>
+
+
+  <div id="DrawerOverlay" class="drawer-overlay"></div>
+  <div id="ThemeModal" class="theme-modal width--modal"></div>
+
+  <div 
+    id="PageContainer" 
+    data-editor-open="false" 
+    data-cart-action="go_to_or_open_cart" 
+    data-cart-type="drawer" 
+    data-language-url="/" 
+    data-show-currency-code="false"
+    data-currency-code="USD"
+  >
+    <div class="no-js disclaimer">
+      <p>This store requires javascript to be enabled for some features to work correctly.</p>
+    </div>
+
+    <!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--24246222356787__announcement-bar" class="shopify-section shopify-section-group-header-group"><div class="announcement_bar" data-wetheme-section-type="announcement-bar" data-wetheme-section-id="sections--24246222356787__announcement-bar" data-social-media-enabled="false">
+    <animated-background-text-colors class="announcements_only" style="background-color: #f9f9fb; color: #262428;"><div 
+      data-announcement-block
+      data-background-color-block="#f9f9fb" 
+      data-front-color-block="#262428"
+      data-announcement-block-index="0" 
+      class="announcement_block block-id-03-announcement active" 
+      
+    ><style data-shopify>
+              .block-id-03-announcement .announcement_wrapper.text-link-animated a {
+                background: linear-gradient(to top, rgba(38, 36, 40, 0.5) 0, rgba(38, 36, 40, 0.5) 0), linear-gradient(to top, currentColor 0, currentColor 0);
+                background-size: 100% 1px, 0 1px;
+                background-position: 100% 100%, 0 100%;
+                background-repeat: no-repeat;
+              }
+
+              .block-id-03-announcement .announcement_wrapper.text-link-animated a:hover {
+                background-size: 0 1px, 100% 1px;
+              }
+            </style>
+
+            <div class="announcement_wrapper text-link-animated" data-announcement>
+              <span class="announcement_text">FREE SHIPPING ON ALL ORDERS OVER $50</span>
+            </div></div></animated-background-text-colors>
+  </div></div><div id="shopify-section-sections--24246222356787__header" class="shopify-section shopify-section-group-header-group header-section">
+
+<link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-mobile-menu.min.css?v=65241013563444139781741284160" rel="stylesheet" type="text/css" media="all" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript>
+  
+  <ul class="no-js-mobile-menu nav-link-animated">
+  
+    
+      <li>
+        <a href="/collections/flour-sugar-storage-containers">Flour & Sugar Containers</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/collections/pantry-storage-containers">Pantry Containers</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/blogs/kitchen-tips">Blogs</a>
+      </li>
+    
+  
+</ul>
+</noscript>
+
+<style data-shopify>
+  .default-menu-drawer-text-color {
+    color: var(--menu-drawer-text-color);
+  }
+
+  
+    .locale--mobile {
+      padding: 15px;
+    }
+  
+</style>
+
+<div
+  class="header-section--wrapper"
+  data-wetheme-section-type="header"
+  data-wetheme-section-id="sections--24246222356787__header"
+  data-header-sticky="true"
+  data-header-overlay="false"
+>
+  <div id="NavDrawerOverlay" class="drawer-overlay"></div>
+  <div id="NavDrawer" class="drawer drawer--left" inert>
+
+    <div class="mobile-nav-grid-container">
+      <div class="mobile-nav__logo-title">
+        <div class="mobile-nav__logo-title--inner">
+          <a href="#" class="mobile-menu--close-btn standalone-icon--wrapper" aria-label="Close menu" role="button">
+            
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5.63086 14.3692L10 10L14.3692 14.3692M14.3692 5.63086L9.99919 10L5.63086 5.63086" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- begin mobile-nav -->
+      <ul class="mobile-nav mobile-nav--main">
+        
+        
+          
+          
+            <li class="mobile-nav__item top-level">
+              
+                <a href="/collections/flour-sugar-storage-containers" class="mobile-nav__link">Flour & Sugar Containers</a>
+              
+            </li>
+          
+        
+          
+          
+            <li class="mobile-nav__item top-level">
+              
+                <a href="/collections/pantry-storage-containers" class="mobile-nav__link">Pantry Containers</a>
+              
+            </li>
+          
+        
+          
+          
+            <li class="mobile-nav__item top-level">
+              
+                <a href="/blogs/kitchen-tips" class="mobile-nav__link">Blogs</a>
+              
+            </li>
+          
+        
+      </ul>
+
+      <div class="mobile-nav--footer">
+        <div class="mobile-nav locale--mobile">
+          
+  <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-localization-form.js?v=52480783616540860941741284160" defer="defer" type="module" data-internal-script></script>
+
+
+        </div>
+
+        
+        
+        <style data-shopify>
+          .mobile-nav.nav--meta {
+            display: grid;
+            gap: 15px;
+          }
+
+          .mobile-nav.nav--meta .mobile-nav__item.customer--info,
+          .mobile-nav.nav--meta .mobile-nav__item.customer-logout-link,
+          .mobile-nav.nav--meta .mobile-nav__item.customer-login-link,
+          .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper #sm-icons {
+            width: 100%;
+          }
+
+          
+            .mobile-nav.nav--meta .mobile-nav__social-icons {
+              justify-content: end;
+            }
+
+            
+              .mobile-nav.nav--meta {
+                grid-template-columns: 1fr 1fr;
+              }
+
+              .mobile-nav.nav--meta .mobile-nav__item.customer-login-link {
+                grid-column-start: 1;
+                grid-column-end: 2;
+              }
+
+              .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper {
+                grid-column-start: 2;
+                grid-column-end: 3;
+              }
+            
+          
+        </style>
+        <ul class="mobile-nav nav--meta">
+          
+            
+              <li class="mobile-nav__item customer-login-link">
+                <a href="https://whitefeathersupplies.com/customer_authentication/redirect?locale=en&amp;region_country=US" id="customer_login_link">Log in</a>
+              </li>
+            
+          
+
+            <li class="mobile-nav__item sm-icons--wrapper">
+
+
+
+<ul id="sm-icons" class="clearfix mobile-nav__social-icons">
+
+  
+    <li id="sm-facebook"><a class="standalone-icon--wrapper icon-no-padding" href="https://www.facebook.com/people/White-Feather-Supplies/61574874282650/" target="_blank" aria-label="Facebook">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="fa-2x"><path d="M14.1667 1.66663H11.6667C10.5616 1.66663 9.50179 2.10561 8.72039 2.88701C7.93899 3.66842 7.5 4.72822 7.5 5.83329V8.33329H5V11.6666H7.5V18.3333H10.8333V11.6666H13.3333L14.1667 8.33329H10.8333V5.83329C10.8333 5.61228 10.9211 5.40032 11.0774 5.24404C11.2337 5.08776 11.4457 4.99996 11.6667 4.99996H14.1667V1.66663Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+    <li id="sm-instagram"><a class="standalone-icon--wrapper icon-no-padding" href="https://www.instagram.com/whitefeathersupplies/" target="_blank" aria-label="Instagram">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="fa-2x"><path d="M9.99935 13.3333C10.8834 13.3333 11.7313 12.9821 12.3564 12.357C12.9815 11.7319 13.3327 10.884 13.3327 9.99996C13.3327 9.1159 12.9815 8.26806 12.3564 7.64294C11.7313 7.01782 10.8834 6.66663 9.99935 6.66663C9.11529 6.66663 8.26745 7.01782 7.64233 7.64294C7.0172 8.26806 6.66602 9.1159 6.66602 9.99996C6.66602 10.884 7.0172 11.7319 7.64233 12.357C8.26745 12.9821 9.11529 13.3333 9.99935 13.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 13.3333V6.66667C2.5 5.5616 2.93899 4.50179 3.72039 3.72039C4.50179 2.93899 5.5616 2.5 6.66667 2.5H13.3333C14.4384 2.5 15.4982 2.93899 16.2796 3.72039C17.061 4.50179 17.5 5.5616 17.5 6.66667V13.3333C17.5 14.4384 17.061 15.4982 16.2796 16.2796C15.4982 17.061 14.4384 17.5 13.3333 17.5H6.66667C5.5616 17.5 4.50179 17.061 3.72039 16.2796C2.93899 15.4982 2.5 14.4384 2.5 13.3333Z" stroke="currentColor" stroke-width="1.5"/><path d="M14.584 5.42506L14.5923 5.41589" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+    <li id="sm-pinterest"><a class="standalone-icon--wrapper icon-no-padding" href="https://www.pinterest.com/Whitefeathersupplies1/" target="_blank" aria-label="Pinterest">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="fa-2x"><path d="M6.6663 12.0833C4.1663 8.33329 7.88463 5.41663 10.4163 5.41663C12.948 5.41663 14.9996 6.79496 14.9996 9.99996C14.9996 12.5316 13.333 14.1666 11.6663 14.1666C9.99963 14.1666 9.1663 12.5 9.58297 9.99996M9.99963 8.33329L7.49963 17.9166" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.99935 18.3333C14.6018 18.3333 18.3327 14.6025 18.3327 9.99996C18.3327 5.39746 14.6018 1.66663 9.99935 1.66663C5.39685 1.66663 1.66602 5.39746 1.66602 9.99996C1.66602 14.6025 5.39685 18.3333 9.99935 18.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</ul>
+
+
+</li>
+          
+        </ul>
+      </div>
+      <!-- //mobile-nav -->
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  <header class="site-header wrapper-spacing--h  dropdown-alignment--center">
+    <div class="site-header__wrapper site-header__wrapper--logo-center site-header__wrapper--with-menu">
+      <div class="site-header__wrapper__left">
+        
+          
+    <div role="navigation" class="js site-header__nav top-links" id="top_links_wrapper">
+      <ul class="site-nav nav-link-animated  mega-menu-wrapper" id="AccessibleNav">
+        
+
+
+
+  
+    
+    
+
+    
+
+    <li class="first-level-dropdown" >
+      <a href="/collections/flour-sugar-storage-containers" class="site-nav__link">
+        <div class="site-nav--link-wrapper">
+          <span class="site-nav--link-text animated-underline">
+            Flour & Sugar Containers
+          </span>
+        </div>
+      </a>
+
+      
+    </li>
+  
+
+
+  
+    
+    
+
+    
+
+    <li class="first-level-dropdown" >
+      <a href="/collections/pantry-storage-containers" class="site-nav__link">
+        <div class="site-nav--link-wrapper">
+          <span class="site-nav--link-text animated-underline">
+            Pantry Containers
+          </span>
+        </div>
+      </a>
+
+      
+    </li>
+  
+
+
+  
+    
+    
+
+    
+
+    <li class="first-level-dropdown" >
+      <a href="/blogs/kitchen-tips" class="site-nav__link">
+        <div class="site-nav--link-wrapper">
+          <span class="site-nav--link-text animated-underline">
+            Blogs
+          </span>
+        </div>
+      </a>
+
+      
+    </li>
+  
+
+
+
+  <style data-shopify>
+    .site-nav__dropdown.mega-menu-dropdown {
+      top: calc(100% + 1px);
+    }
+  </style>
+
+      </ul>
+    </div>
+    <noscript>
+      
+      <ul>
+  
+    
+      <li>
+        <a href="/collections/flour-sugar-storage-containers">Flour & Sugar Containers</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/collections/pantry-storage-containers">Pantry Containers</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/blogs/kitchen-tips">Blogs</a>
+      </li>
+    
+  
+</ul>
+    </noscript>
+  
+        
+      </div>
+
+      <div class="site-header__wrapper__center">
+        
+          
+    <div class="site-header__logowrapper">
+
+      
+        <div class="header-font site-header__logo site-title" itemscope itemtype="http://schema.org/Organization">
+      
+
+        
+    
+      <a href="/" itemprop="url" class="site-header__logo-image">
+        <style>
+          .logo_image {
+            max-height: unset!important;
+            width: 110px;
+          }
+          @media screen and (max-width: 989px) {
+            .logo_image {
+              width: 90px;
+            }
+          }
+        </style>
+        
+        
+
+
+
+
+
+
+
+
+
+
+<div class="responsive-image-wrapper" style="">
+
+<noscript aria-hidden="true">
+  <img
+    
+    class="theme-img logo_image"
+    
+      src="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?crop=center&height=1000&v=1746731793&width=1000"
+    
+    
+      alt="White Feather Supplies"
+    
+    itemprop="logo"
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+    loading="eager"
+  />
+</noscript>
+
+<img
+  loading="eager"
+  class="theme-img logo_image js"
+  style=" object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    alt="White Feather Supplies"
+  
+  itemprop="logo"
+  width="1100"
+  height="711"
+  srcset="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=550 550w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=750 750w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1100 1100w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1100 1100w"
+  sizes="(min-width: 2000px) 1000px, (min-width: 1445px) calc(100vw / 2), (min-width: 1200px) calc(100vw / 1.75), (min-width: 1000px) calc(100vw / 1.5), (min-width: 750px) calc(100vw / 3), 100vw"
+  src="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1445"
+/>
+
+</div>
+
+      </a>
+    
+  
+        
+    
+  
+
+      
+        </div>
+      
+
+    </div>
+  
+        
+      </div>
+
+      <div class="site-header__wrapper__right top-links">
+        
+          
+  <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-localization-form.js?v=52480783616540860941741284160" defer="defer" type="module" data-internal-script></script>
+
+
+        
+
+        
+  <ul class="site-header__links top-links--icon-links">
+    
+      <li>
+        <a href="/search" class="search-button standalone-icon--wrapper" aria-label="Search">
+          
+            
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M14.1667 14.1667L17.5 17.5M2.5 9.16667C2.5 10.9348 3.20238 12.6305 4.45262 13.8807C5.70286 15.131 7.39856 15.8333 9.16667 15.8333C10.9348 15.8333 12.6305 15.131 13.8807 13.8807C15.131 12.6305 15.8333 10.9348 15.8333 9.16667C15.8333 7.39856 15.131 5.70286 13.8807 4.45262C12.6305 3.20238 10.9348 2.5 9.16667 2.5C7.39856 2.5 5.70286 3.20238 4.45262 4.45262C3.20238 5.70286 2.5 7.39856 2.5 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+          
+        </a>
+      </li>
+    
+
+    
+      
+        <li>
+          <a href="https://whitefeathersupplies.com/customer_authentication/redirect?locale=en&region_country=US" aria-label="Log in" class="log-in-button standalone-icon--wrapper">
+            
+              
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M4.16602 16.6666V15.8333C4.16602 14.2862 4.7806 12.8024 5.87456 11.7085C6.96852 10.6145 8.45225 9.99992 9.99935 9.99992M9.99935 9.99992C11.5464 9.99992 13.0302 10.6145 14.1241 11.7085C15.2181 12.8024 15.8327 14.2862 15.8327 15.8333V16.6666M9.99935 9.99992C10.8834 9.99992 11.7313 9.64873 12.3564 9.02361C12.9815 8.39849 13.3327 7.55064 13.3327 6.66659C13.3327 5.78253 12.9815 4.93468 12.3564 4.30956C11.7313 3.68444 10.8834 3.33325 9.99935 3.33325C9.11529 3.33325 8.26745 3.68444 7.64233 4.30956C7.0172 4.93468 6.66602 5.78253 6.66602 6.66659C6.66602 7.55064 7.0172 8.39849 7.64233 9.02361C8.26745 9.64873 9.11529 9.99992 9.99935 9.99992Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+            
+          </a>
+        </li>
+      
+    
+
+    
+
+    <li>
+      <a 
+        href="/cart" 
+        class="site-header__cart-toggle js-drawer-open-right-link cart-count-enabled shopping-cart standalone-icon--wrapper header-icons-enabled"
+        aria-controls="CartDrawer" 
+        aria-expanded="false" 
+        aria-label="Cart"
+      >
+        
+          
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M16.2493 18.3333C16.5809 18.3333 16.8988 18.2016 17.1332 17.9671C17.3677 17.7327 17.4993 17.4148 17.4993 17.0833C17.4993 16.7517 17.3677 16.4338 17.1332 16.1994C16.8988 15.9649 16.5809 15.8333 16.2493 15.8333C15.9178 15.8333 15.5999 15.9649 15.3655 16.1994C15.131 16.4338 14.9993 16.7517 14.9993 17.0833C14.9993 17.4148 15.131 17.7327 15.3655 17.9671C15.5999 18.2016 15.9178 18.3333 16.2493 18.3333ZM7.91602 18.3333C8.24754 18.3333 8.56548 18.2016 8.7999 17.9671C9.03432 17.7327 9.16602 17.4148 9.16602 17.0833C9.16602 16.7517 9.03432 16.4338 8.7999 16.1994C8.56548 15.9649 8.24754 15.8333 7.91602 15.8333C7.5845 15.8333 7.26655 15.9649 7.03213 16.1994C6.79771 16.4338 6.66602 16.7517 6.66602 17.0833C6.66602 17.4148 6.79771 17.7327 7.03213 17.9671C7.26655 18.2016 7.5845 18.3333 7.91602 18.3333Z" fill="#262428" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.16602 3.33341H18.3327L16.666 12.5001M4.16602 3.33341L5.83268 12.5001H16.666M4.16602 3.33341C4.02685 2.77758 3.33268 1.66675 1.66602 1.66675M16.666 12.5001H4.35768C2.87102 12.5001 2.08268 13.1509 2.08268 14.1667C2.08268 15.1826 2.87102 15.8334 4.35768 15.8334H16.2493" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                                                                                                                                                    
+              <span 
+                data-cart-count-indicator
+                class="cart-item-count-bubble cart-item-count-header cart-item-count-header--quantity hide"
+              >
+                0
+              </span>
+          
+        
+      </a>
+    </li>
+
+    
+  </ul>
+
+      </div>
+    </div>
+
+    
+  </header>
+
+  <nav class="nav-bar mobile-nav-bar-wrapper">
+    <div class="wrapper-spacing--h">
+      <div class="mobile-nav-bar--inner">
+        <div class="mobile-grid--table">
+
+          <div class="grid__item three-twelfths">
+            <div class="site-nav--mobile">
+              <button type="button" aria-label="Navigation" class="hamburger-nav-button icon-fallback-text site-nav__link js-drawer-open-left-link standalone-icon--wrapper" aria-controls="NavDrawer" aria-expanded="false">
+                
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fa-2x"><path d="M3 4.16675H18M3 10.0001H18M3 15.8334H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                <span class="fallback-text">Navigation</span>
+              </button>
+
+              
+            </div>
+          </div>
+
+          <div class="grid__item six-twelfths">
+            
+    <div class="site-header__logowrapper">
+
+      
+        <div class="header-font site-header__logo site-title" itemscope itemtype="http://schema.org/Organization">
+      
+
+        
+    
+      <a href="/" itemprop="url" class="site-header__logo-image">
+        <style>
+          .logo_image {
+            max-height: unset!important;
+            width: 110px;
+          }
+          @media screen and (max-width: 989px) {
+            .logo_image {
+              width: 90px;
+            }
+          }
+        </style>
+        
+        
+
+
+
+
+
+
+
+
+
+
+<div class="responsive-image-wrapper" style="">
+
+<noscript aria-hidden="true">
+  <img
+    
+    class="theme-img logo_image"
+    
+      src="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?crop=center&height=1000&v=1746731793&width=1000"
+    
+    
+      alt="White Feather Supplies"
+    
+    itemprop="logo"
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+    loading="eager"
+  />
+</noscript>
+
+<img
+  loading="eager"
+  class="theme-img logo_image js"
+  style=" object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    alt="White Feather Supplies"
+  
+  itemprop="logo"
+  width="1100"
+  height="711"
+  srcset="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=550 550w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=750 750w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1100 1100w,//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1100 1100w"
+  sizes="(min-width: 2000px) 1000px, (min-width: 1445px) calc(100vw / 2), (min-width: 1200px) calc(100vw / 1.75), (min-width: 1000px) calc(100vw / 1.5), (min-width: 750px) calc(100vw / 3), 100vw"
+  src="//whitefeathersupplies.com/cdn/shop/files/White_Feather_Logo_Png.png?v=1746731793&width=1445"
+/>
+
+</div>
+
+      </a>
+    
+  
+        
+    
+  
+
+      
+        </div>
+      
+
+    </div>
+  
+          </div>
+
+          <div class="grid__item three-twelfths right-side has-second-icon">
+            <div class="site-nav--mobile">
+
+              
+                <a href="/search" class="search-button standalone-icon--wrapper" aria-label="Search" aria-controls="SearchDrawer" aria-expanded="false">
+                  <span class="icon-fallback-text">
+                    
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M14.1667 14.1667L17.5 17.5M2.5 9.16667C2.5 10.9348 3.20238 12.6305 4.45262 13.8807C5.70286 15.131 7.39856 15.8333 9.16667 15.8333C10.9348 15.8333 12.6305 15.131 13.8807 13.8807C15.131 12.6305 15.8333 10.9348 15.8333 9.16667C15.8333 7.39856 15.131 5.70286 13.8807 4.45262C12.6305 3.20238 10.9348 2.5 9.16667 2.5C7.39856 2.5 5.70286 3.20238 4.45262 4.45262C3.20238 5.70286 2.5 7.39856 2.5 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                    <span class="fallback-text">Search</span>
+                  </span>
+                </a>
+              
+
+              <a href="/cart" aria-label="Cart" class="js-drawer-open-right-link site-nav__link cart-count-enabled shopping-cart standalone-icon--wrapper header-icons-enabled" aria-controls="CartDrawer" aria-expanded="false">
+                <span class="icon-fallback-text">
+                  
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="fa-2x"><path d="M16.2493 18.3333C16.5809 18.3333 16.8988 18.2016 17.1332 17.9671C17.3677 17.7327 17.4993 17.4148 17.4993 17.0833C17.4993 16.7517 17.3677 16.4338 17.1332 16.1994C16.8988 15.9649 16.5809 15.8333 16.2493 15.8333C15.9178 15.8333 15.5999 15.9649 15.3655 16.1994C15.131 16.4338 14.9993 16.7517 14.9993 17.0833C14.9993 17.4148 15.131 17.7327 15.3655 17.9671C15.5999 18.2016 15.9178 18.3333 16.2493 18.3333ZM7.91602 18.3333C8.24754 18.3333 8.56548 18.2016 8.7999 17.9671C9.03432 17.7327 9.16602 17.4148 9.16602 17.0833C9.16602 16.7517 9.03432 16.4338 8.7999 16.1994C8.56548 15.9649 8.24754 15.8333 7.91602 15.8333C7.5845 15.8333 7.26655 15.9649 7.03213 16.1994C6.79771 16.4338 6.66602 16.7517 6.66602 17.0833C6.66602 17.4148 6.79771 17.7327 7.03213 17.9671C7.26655 18.2016 7.5845 18.3333 7.91602 18.3333Z" fill="#262428" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.16602 3.33341H18.3327L16.666 12.5001M4.16602 3.33341L5.83268 12.5001H16.666M4.16602 3.33341C4.02685 2.77758 3.33268 1.66675 1.66602 1.66675M16.666 12.5001H4.35768C2.87102 12.5001 2.08268 13.1509 2.08268 14.1667C2.08268 15.1826 2.87102 15.8334 4.35768 15.8334H16.2493" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+                  
+                    <span class="cart-item-count-bubble cart-item-count-header cart-item-count-header--quantity hide">0</span>
+                  
+                  <span class="fallback-text">Cart</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+
+  :root {
+    --logo-max-width: 110px;
+    --header-overlay-background-color: #262428;
+
+    
+      --sticky-header-offset: -1px;
+  }
+
+  .site-title{
+  	padding: 20px 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .site-title{
+      padding: 15px 0;
+    }
+  }
+
+  .site-header .site-header__wrapper .logo_image {
+    max-width: 110px;
+  }
+
+  @media screen and (max-width: 989px) {
+    .site-header .site-header__wrapper .logo_image {
+      max-width: 90px;
+    }
+  }
+
+  .site-nav__dropdown li, .inner .h4, .inner .h5 {
+    text-align: center;
+  }
+
+  .template-index .header-section.sticky-header:not(.sticked) .overlay-header,
+  .template-index .header-section:not(.sticky-header) .overlay-header,
+  
+  .template-list-collections .header-section.sticky-header:not(.sticked) .overlay-header,
+  .template-list-collections .header-section:not(.sticky-header) .overlay-header,
+  .contact-page .header-section.sticky-header:not(.sticked) .overlay-header,
+  .contact-page .header-section:not(.sticky-header) .overlay-header
+  {
+    background-color: rgba(38, 36, 40, 0.0);
+  }
+
+  .overlay-header .grid--full {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .overlay-header .grid--full {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .template-index .overlay-header.force-hover,
+  
+  .template-list-collections .overlay-header.force-hover
+  .contact-page .overlay-header.force-hover
+   {
+    background-color: #242424;
+  }
+
+  
+</style>
+
+
+</div>
+<!-- END sections: header-group -->
+    <!-- BEGIN sections: overlay-group -->
+<div id="shopify-section-sections--24246222389555__offers-drawer" class="shopify-section shopify-section-group-overlay-group section--offers-drawer"><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/section-offers-drawer.min.css?v=122911764709208378371741284161" rel="stylesheet" type="text/css" media="all" />
+<div
+  data-wetheme-section-type="offers-drawer"
+  data-wetheme-section-id="sections--24246222389555__offers-drawer"
+>
+  <offers-drawer
+    id="OffersDrawer"
+    aria-modal="true"
+    role="dialog"
+    aria-hidden="true"
+    class="global-drawer"
+    data-drawer-position="right"
+    data-section-id="sections--24246222389555__offers-drawer"
+  >
+    <span data-drawer-close class="global-drawer__overlay"></span>
+    <div class="global-drawer__content">
+      <header class="global-drawer__sticky-header">
+        <button
+          data-drawer-close
+          type="button"
+          aria-label="Close"
+          class="global-drawer__close"
+        >
+          <span class="fallback-text">Close</span>
+          
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M5.63086 14.3692L10 10L14.3692 14.3692M14.3692 5.63086L9.99919 10L5.63086 5.63086" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+        </button>
+        <h3 class="offers-drawer__heading" data-offers-drawer-heading>
+          
+            <span class="text-link-animated">Today's offers</span>
+          
+        </h3>
+      </header>
+      <div class="global-drawer__body global-drawer__body--with-padding">
+        <div class="global-drawer__body--content offers-drawer__content">
+          
+          
+            
+
+                <div class="offers-drawer__offer offers-drawer__offer--above offers-drawer__offer--has-content">
+                  
+                  <div class="offers-drawer__text-content">
+                    
+                      
+                        <h4 class="offers-drawer__offer-title text-link-animated">Offer</h4>
+                      
+                    
+                    
+                      <div class="offers-drawer__offer-description text-link-animated"><p>Provide additional details about the offer you're running.</p></div>
+                    
+                    
+                      <copy-code class="offers-drawer__offer-discount-code">
+                        <div data-offers-drawer-code class="offers-drawer__offer-discount-code--code" tabindex="0">FLASHSALE</div>
+                        <button data-offers-drawer-copy-btn class="offers-drawer__offer-discount-code--btn" aria-label="Copy">
+                          <span data-offers-drawer-copy-icon>
+
+
+
+
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  width="24" height="24"><path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </span>
+                          <span data-offers-drawer-check-icon class="hide-icon">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4.16602 10.8334L7.49935 14.1667L15.8327 5.83337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </span>
+                        </button>
+                      </copy-code>
+                      <safe-load-scripts class="hidden">
+                        <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-copy-code.js?v=32022355208813028831741284160" type="module" defer="defer" data-flow-load-key="component-copy-code"></script>
+                      </safe-load-scripts>
+                    
+                    
+                  </div>
+                </div>
+              
+            
+
+                <div class="offers-drawer__offer offers-drawer__offer--above offers-drawer__offer--has-content">
+                  
+                  <div class="offers-drawer__text-content">
+                    
+                      
+                        <h4 class="offers-drawer__offer-title text-link-animated">Offer</h4>
+                      
+                    
+                    
+                      <div class="offers-drawer__offer-description text-link-animated"><p>Provide additional details about the offer you're running.</p></div>
+                    
+                    
+                      <copy-code class="offers-drawer__offer-discount-code">
+                        <div data-offers-drawer-code class="offers-drawer__offer-discount-code--code" tabindex="0">20OFFTODAY</div>
+                        <button data-offers-drawer-copy-btn class="offers-drawer__offer-discount-code--btn" aria-label="Copy">
+                          <span data-offers-drawer-copy-icon>
+
+
+
+
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  width="24" height="24"><path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </span>
+                          <span data-offers-drawer-check-icon class="hide-icon">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4.16602 10.8334L7.49935 14.1667L15.8327 5.83337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </span>
+                        </button>
+                      </copy-code>
+                      <safe-load-scripts class="hidden">
+                        <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-copy-code.js?v=32022355208813028831741284160" type="module" defer="defer" data-flow-load-key="component-copy-code"></script>
+                      </safe-load-scripts>
+                    
+                    
+                  </div>
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    </div>
+  </offers-drawer>
+
+  <safe-load-scripts class="hidden">
+    <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-offers-drawer.js?v=22280801590165867931741284161" type="module" defer="defer" data-flow-load-key="component-offers-drawer"></script>
+  </safe-load-scripts>
+</div>
+
+</div>
+<!-- END sections: overlay-group -->
+
+    
+
+    
+      <div id="MainContent" class="wrapper main-content page-main--wrapper">
+    
+
+        <div id="shopify-section-template--24246222618931__main" class="shopify-section"><link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/template-page.min.css?v=16972031548799146841741284160" rel="stylesheet" type="text/css" media="all" />
+<div class="wrapper-spacing--v--template wrapper-spacing--h show-on-scroll">
+  <div>
+    
+      <div class="template-title--wrapper">
+        <h1 class="page--title template-title" data-animate data-animate-order="1">Shipping Policy</h1>
+      </div>
+    
+
+    <div class="grid">
+      <div class="rte text-link-animated grid__item grid__item--page">
+        <p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Please carefully review our Shipping &amp; Delivery Policy when buying products from White Feather Supplies. This policy will apply to any order you place on White Feather Supplies.</span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Shipping &amp; Delivery</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Welcome to the shipping policy of White Feather Supplies! We strive to provide all our customers with a seamless and efficient shipping process. This page outlines the important information regarding the shipping and delivery of White Feather products. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Shipping Methods</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">White Feather offers its prestigious customers various shipping methods. Once you put the desired items in your cart from White Feather Supplies, you will get the shipping options, shipping costs, and estimated delivery times at checkout. However, the shipping costs may vary depending on the geographical area and weight of the product. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Shipping Areas</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">White Feather Supplies currently ships its products to selected destinations. Please verify during the checkout process whether we deliver your to your location. If your desired location is not listed, we apologize for the inconvenience and hope to deliver to your location soon. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Order Processing Time</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Once you place your order, we strive to process your order for shipment within 2 business days. However, there may be exceptions due to the peak season, promotional periods, or any unforeseen circumstances that delay the order processing. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Order Tracking</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Once the order is processed and shipped to your destination, you will receive a confirmation email from White Feather Supplies containing a tracking number and instructions to follow to track your order. Use the tracking number in the email to track the progress of your order and check its estimated delivery date to avoid any inconvenience. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Delivery Time</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Being a customer-first product seller, we strive our utmost best to provide you with accurate delivery estimates. Remember, the delivery time is calculated based on the shipping method and the destination. However, it is to be noted that the delivery may be delayed due to unforeseen circumstances which are not in our control. Unforeseen circumstances may arise due to customs procedures, delays caused by shipping carriers, etc. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Customs and Duties</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">The customs fees, import duties, taxes, and other charges are solely the customer’s responsibility. These charges are applicable on international orders and are not included in the product cost and shipping charges. For a smooth and seamless delivery process, please check with your local customs office and gather the necessary information regarding the international shipment charges. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Delivery Attempts and Re-Delivery</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">If a delivery attempt is unsuccessful due to the recipient’s unavailability or incorrect address, our shipping carriers will make more attempts to deliver the package. They will hold your package at the local facility for a specific time frame and then update the delivery status as “Failed”. Remember, it is the customer’s responsibility to provide an accurate address and be at the address when the delivery is scheduled. </span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Damaged or Lost Packages</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">White Feather takes every care in packaging and securing your order before shipping. However, if your package arrives damaged or is misplaced/lost in transit (both events occur rarely), contact our customer support team immediately and report your issue. We will work on your complaint and resolve the issue giving you a suitable solution.</span></p>
+<p data-mce-fragment="1"><b data-mce-fragment="1">Contact Our Support Team</b></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">If you have any issues or concerns regarding shipment, order tracking, or delivery status, please feel free to reach out to our support team to discuss your issue. Our team is 24/7 available to assist you regarding any of your concerns. </span></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Email:</span></p>
+<p data-mce-fragment="1"><span style="font-weight: 400;" data-mce-fragment="1" data-mce-style="font-weight: 400;">Thank you for choosing White Feather Supplies.</span></p>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+</div>
+      </div>
+  </div>
+
+  <div class="footer-wrapper">
+    <!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--24246222324019__footer-main" class="shopify-section shopify-section-group-footer-group"><footer
+  class="footer-main accent flex-full color-scheme--accent site-footer footer-alignment--left"
+  data-wetheme-section-type="footer-main" data-wetheme-section-id="sections--24246222324019__footer-main"
+  style="--footer-heading-font-size: 16px;"
+>
+	<div 
+    class="footer-main--inner wrapper-spacing--h"
+    style="grid-template-columns: repeat(3, 1fr);"
+  >
+    
+      
+
+          <div class="newsletter-footer border-none padding-none" >
+            
+
+            <img src="https://cdn.shopify.com/s/files/1/0863/8388/6643/files/White_Feather_Logo_Png.png?v=1746731793" alt="Logo">
+
+            <div class="newsletter-footer--wrapper">
+
+              
+              <form method="post" action="/contact#newsletter-footer_form" id="newsletter-footer_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+                
+
+                
+                  
+                
+
+                
+                  
+                  
+                  
+                  <div class="input-group">
+                    <input type="email" value="" placeholder="Email" name="contact[email]" id="FooterEmail" class="input-group-field footer-email-input" aria-label="Email" pattern=".+@.+\..+" title="Email must be formatted as an email.">
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <button type="submit" class="btn footer-email-submit dynamic-section-button--newsletter" name="subscribe" id="FooterSubscribe">Subscribe</button>
+                  </div>
+                
+              </form>
+            </div>
+
+            <div class="social-media-footer border-none padding-none" >
+            
+              <div class="h3 footer-header"></div>
+            
+            
+
+
+
+<ul id="sm-icons" class="clearfix ">
+
+  
+    <li id="sm-facebook"><a class="standalone-icon--wrapper " href="https://www.facebook.com/people/White-Feather-Supplies/61574874282650/" target="_blank" aria-label="Facebook">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M14.1667 1.66663H11.6667C10.5616 1.66663 9.50179 2.10561 8.72039 2.88701C7.93899 3.66842 7.5 4.72822 7.5 5.83329V8.33329H5V11.6666H7.5V18.3333H10.8333V11.6666H13.3333L14.1667 8.33329H10.8333V5.83329C10.8333 5.61228 10.9211 5.40032 11.0774 5.24404C11.2337 5.08776 11.4457 4.99996 11.6667 4.99996H14.1667V1.66663Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+    <li id="sm-instagram"><a class="standalone-icon--wrapper " href="https://www.instagram.com/whitefeathersupplies/" target="_blank" aria-label="Instagram">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M9.99935 13.3333C10.8834 13.3333 11.7313 12.9821 12.3564 12.357C12.9815 11.7319 13.3327 10.884 13.3327 9.99996C13.3327 9.1159 12.9815 8.26806 12.3564 7.64294C11.7313 7.01782 10.8834 6.66663 9.99935 6.66663C9.11529 6.66663 8.26745 7.01782 7.64233 7.64294C7.0172 8.26806 6.66602 9.1159 6.66602 9.99996C6.66602 10.884 7.0172 11.7319 7.64233 12.357C8.26745 12.9821 9.11529 13.3333 9.99935 13.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 13.3333V6.66667C2.5 5.5616 2.93899 4.50179 3.72039 3.72039C4.50179 2.93899 5.5616 2.5 6.66667 2.5H13.3333C14.4384 2.5 15.4982 2.93899 16.2796 3.72039C17.061 4.50179 17.5 5.5616 17.5 6.66667V13.3333C17.5 14.4384 17.061 15.4982 16.2796 16.2796C15.4982 17.061 14.4384 17.5 13.3333 17.5H6.66667C5.5616 17.5 4.50179 17.061 3.72039 16.2796C2.93899 15.4982 2.5 14.4384 2.5 13.3333Z" stroke="currentColor" stroke-width="1.5"/><path d="M14.584 5.42506L14.5923 5.41589" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+    <li id="sm-pinterest"><a class="standalone-icon--wrapper " href="https://www.pinterest.com/Whitefeathersupplies1/" target="_blank" aria-label="Pinterest">
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M6.6663 12.0833C4.1663 8.33329 7.88463 5.41663 10.4163 5.41663C12.948 5.41663 14.9996 6.79496 14.9996 9.99996C14.9996 12.5316 13.333 14.1666 11.6663 14.1666C9.99963 14.1666 9.1663 12.5 9.58297 9.99996M9.99963 8.33329L7.49963 17.9166" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.99935 18.3333C14.6018 18.3333 18.3327 14.6025 18.3327 9.99996C18.3327 5.39746 14.6018 1.66663 9.99935 1.66663C5.39685 1.66663 1.66602 5.39746 1.66602 9.99996C1.66602 14.6025 5.39685 18.3333 9.99935 18.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</ul>
+
+
+
+          </div>
+            
+          </div>
+      
+    
+      
+
+            
+            <div class="links-footer" >
+              
+                <div class="h3 footer-header">Quick Links</div>
+              
+              
+                <ul class="footer-content nav-link-animated">
+                  
+                    
+                      <li>
+                        <a href="/pages/about-us"><span class="animated-underline">About Us</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/pages/contact-us"><span class="animated-underline">Contact Us</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/pages/return-exchange-policy"><span class="animated-underline">Return & Exchange Policy</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/pages/shipping-policy"><span class="animated-underline">Shipping Policy</span></a>
+                      </li>
+                    
+                  
+                </ul>
+              
+            </div>
+
+          
+    
+      
+
+            
+            <div class="links-footer" >
+              
+                <div class="h3 footer-header">Popular Products</div>
+              
+              
+                <ul class="footer-content nav-link-animated">
+                  
+                    
+                      <li>
+                        <a href="/products/extra-large-8-5l-plastic-food-storage-containers-set-of-2"><span class="animated-underline">8.5L Plastic Food Storage Containers</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/products/6-5l-plastic-food-container-set-of-2"><span class="animated-underline">6.5L Plastic Food Storage Containers</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/products/5-2l-and-6-5l-plastic-food-storage-container-set-of-4"><span class="animated-underline">5.2L Plastic Food Storage Containers</span></a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a href="/products/airtight-food-storage-container-set-20-pcs"><span class="animated-underline">40pcs Airtight Food Storage Containers</span></a>
+                      </li>
+                    
+                  
+                </ul>
+              
+            </div>
+
+          
+    
+  </div>
+</footer>
+
+
+</div><div id="shopify-section-sections--24246222324019__footer-bottom" class="shopify-section shopify-section-group-footer-group">
+
+<div
+  class="footer-bottom flex-full accent color-scheme--accent site-footer footer-alignment--center"
+  data-wetheme-section-type="footer-bottom" data-wetheme-section-id="sections--24246222324019__footer-bottom"
+>
+	<div class="footer-bottom--inner wrapper-spacing--h">
+    <div class="bottom--footer">
+      
+        <div class="bottom--footer-row bottom--footer--payment-methods">
+          <div class="bottom--footer---localization"><div class="localization-form-wrapper"><script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-localization-form.js?v=52480783616540860941741284160" defer="defer" type="module" data-internal-script></script>
+</div></div>
+
+          
+
+              <ul class="inline-list payment-icons">
+                
+                  <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#0071CE" style="fill:#0071CE;fill:color(display-p3 0.0000 0.4431 0.8078);fill-opacity:1;"/><path d="M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z" stroke="black" stroke-opacity="0.07" style="stroke:black;stroke-opacity:0.07;"/><path d="M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z" fill="white" style="fill:white;fill-opacity:1;"/></svg>
+</li>
+                
+                  <li><svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z" /><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875" /><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858" /><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048" /></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z" /><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z" /><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z" /></g></g></svg>
+</li>
+                
+                  <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club"><title id="pi-diners_club">Diners Club</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"/></svg></li>
+                
+                  <li><svg class="payment-icon" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"/><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"/><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"/><path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"/><path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"/><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"/><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"/><defs><linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse"><stop stop-color="#F89F20"/><stop offset=".25" stop-color="#F79A20"/><stop offset=".533" stop-color="#F68D20"/><stop offset=".62" stop-color="#F58720"/><stop offset=".723" stop-color="#F48120"/><stop offset="1" stop-color="#F37521"/></linearGradient><linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse"><stop stop-color="#F58720"/><stop offset=".359" stop-color="#E16F27"/><stop offset=".703" stop-color="#D4602C"/><stop offset=".982" stop-color="#D05B2E"/></linearGradient></defs></svg></li>
+                
+                  <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-google_pay"><title id="pi-google_pay">Google Pay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/><path d="M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z" fill="#5F6368"/><path d="M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z" fill="#4285F4"/><path d="M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z" fill="#34A853"/><path d="M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z" fill="#FBBC04"/><path d="M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z" fill="#EA4335"/></svg>
+</li>
+                
+                  <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" style="fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" style="fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;"/><path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" style="fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;"/><path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" style="fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;"/><path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" style="fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;"/></svg>
+</li>
+                
+                  <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg></li>
+                
+                  <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-shopify_pay"><title id="pi-shopify_pay">Shop Pay</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000"/><path d="M35.889 0C37.05 0 38 .982 38 2.182v19.636c0 1.2-.95 2.182-2.111 2.182H2.11C.95 24 0 23.018 0 21.818V2.182C0 .982.95 0 2.111 0H35.89z" fill="#5A31F4"/><path d="M9.35 11.368c-1.017-.223-1.47-.31-1.47-.705 0-.372.306-.558.92-.558.54 0 .934.238 1.225.704a.079.079 0 00.104.03l1.146-.584a.082.082 0 00.032-.114c-.475-.831-1.353-1.286-2.51-1.286-1.52 0-2.464.755-2.464 1.956 0 1.275 1.15 1.597 2.17 1.82 1.02.222 1.474.31 1.474.705 0 .396-.332.582-.993.582-.612 0-1.065-.282-1.34-.83a.08.08 0 00-.107-.035l-1.143.57a.083.083 0 00-.036.111c.454.92 1.384 1.437 2.627 1.437 1.583 0 2.539-.742 2.539-1.98s-1.155-1.598-2.173-1.82v-.003zM15.49 8.855c-.65 0-1.224.232-1.636.646a.04.04 0 01-.069-.03v-2.64a.08.08 0 00-.08-.081H12.27a.08.08 0 00-.08.082v8.194a.08.08 0 00.08.082h1.433a.08.08 0 00.081-.082v-3.594c0-.695.528-1.227 1.239-1.227.71 0 1.226.521 1.226 1.227v3.594a.08.08 0 00.081.082h1.433a.08.08 0 00.081-.082v-3.594c0-1.51-.981-2.577-2.355-2.577zM20.753 8.62c-.778 0-1.507.24-2.03.588a.082.082 0 00-.027.109l.632 1.088a.08.08 0 00.11.03 2.5 2.5 0 011.318-.366c1.25 0 2.17.891 2.17 2.068 0 1.003-.736 1.745-1.669 1.745-.76 0-1.288-.446-1.288-1.077 0-.361.152-.657.548-.866a.08.08 0 00.032-.113l-.596-1.018a.08.08 0 00-.098-.035c-.799.299-1.359 1.018-1.359 1.984 0 1.46 1.152 2.55 2.76 2.55 1.877 0 3.227-1.313 3.227-3.195 0-2.018-1.57-3.492-3.73-3.492zM28.675 8.843c-.724 0-1.373.27-1.845.746-.026.027-.069.007-.069-.029v-.572a.08.08 0 00-.08-.082h-1.397a.08.08 0 00-.08.082v8.182a.08.08 0 00.08.081h1.433a.08.08 0 00.081-.081v-2.683c0-.036.043-.054.069-.03a2.6 2.6 0 001.808.7c1.682 0 2.993-1.373 2.993-3.157s-1.313-3.157-2.993-3.157zm-.271 4.929c-.956 0-1.681-.768-1.681-1.783s.723-1.783 1.681-1.783c.958 0 1.68.755 1.68 1.783 0 1.027-.713 1.783-1.681 1.783h.001z" fill="#fff"/></svg>
+</li>
+                
+                  <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" style="fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" style="fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;"/><path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" style="fill:white;fill-opacity:1;"/></svg>
+</li>
+                
+              </ul>
+            
+          
+        </div>
+      
+
+      <div class="bottom--footer---copyright copyright--mobile">
+        <ul class="bottom--footer---links">
+          <li class="nav-link-animated"><a href="/"><span class="animated-underline">&copy; 2026, White Feather Supplies</span></a></li><!--
+          <!--<li class="nav-link-animated--custom"><a class="animated-link--item" target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<!-- END sections: footer-group -->
+  </div>
+
+  <script defer type="module" src="//whitefeathersupplies.com/cdn/shop/t/5/assets/theme.min.js?v=131424601142603319341741284160"></script>
+  <script defer src="//whitefeathersupplies.com/cdn/shop/t/5/assets/SafeLoadScripts.js?v=117039806523965685941741284160"></script>
+
+  
+
+  
+
+  <style>
+  back-to-top {
+    position: fixed;
+    right: calc(22.5px - 1px);
+    bottom: calc(22.5px - 1px);
+    z-index: 101;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+  @media screen and (max-width: 767px) {
+    back-to-top {
+      right: calc(15px - 1px);
+      bottom: calc(15px - 1px);
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    back-to-top {
+      transition: none;
+    }
+  }
+
+  back-to-top.back-to-top--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .back-to-top-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .back-to-top-button span {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .175);
+    border-radius: var(--alt-btn-border-radius);
+    transition: background .2s ease 0s;
+  }
+</style>
+
+
+  <back-to-top>
+    <button class="back-to-top-button alt-focus" data-selector="back-to-top-button" aria-label="Scroll to top">
+      <span class="btn-hover-default btn-colors-primary">
+        
+
+
+
+
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="chevron-up"><path d="M5.5 12.5L10.5 7.5L15.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>  
+  
+      </span>
+    </button>
+  </back-to-top>
+
+  <script src="//whitefeathersupplies.com/cdn/shop/t/5/assets/component-back-to-top.js?v=174414275101310349331741284160" type="module" defer="defer" data-envy-load-key="component-back-to-top"></script>
+
+
+
+  <script>
+    window.routes = {
+      cart_add_url: '/cart/add',
+      cart_change_url: '/cart/change',
+      cart_update_url: '/cart/update',
+      cart_url: '/cart',
+      predictive_search_url: '/search/suggest',
+    }
+  </script>
+
+  <script type="application/json" id="wetheme-global">
+    {
+      
+      "translations": {
+        "addToCart": "Add to cart",
+        "preorder": "Preorder",
+        "added": "Added",
+        "soldOut": "Sold out",
+        "unavailable": "Unavailable",
+        "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
+        "results_for_html": "Your search for \"{{ terms }}\" revealed the following:",
+        "products": "Products",
+        "pages": "Pages",
+        "collections": "Collections",
+        "articles": "Articles",
+        "suggestions": "Suggestions",
+        "quick_shop": "Quick view",
+        "view_options": "View options",
+        "read_more_html": "Read more",
+        "read_less_html": "Read less",
+        "youve_viewed": "You\u0026#39;ve viewed {{ x }} of {{ y }} products",
+        "load_more": "Load more",
+        "productAdded": "Added",
+        "loading": "loading...",
+        "giftwrap_label": "Gift wrap",
+        "yes": "Yes",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds",
+        "required_input_error": "Please fill in this field.",
+        "required_upload_error": "Please upload a file.",
+        "required_checkbox_error": "Please check this box if you want to proceed.",
+        "required_dropdown_error": "Please select an option from the dropdown.",
+        "max_filesize_error": "This file is too large. The maximum file size is 20MB.",
+        "qr_image_alt": "QR code — scan to redeem gift card"
+      },
+      "moneyFormat": "${{amount}}",
+      "giftwrapProduct": "gift-card"
+    }
+  </script>
+  
+
+  
+    <link href="//whitefeathersupplies.com/cdn/shop/t/5/assets/animate.min.css?v=68297775102622399721741284161" rel="stylesheet" type="text/css" media="all" />
+  
+
+  
+
+  
+
+  
+
+
+        <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const stickyBar = document.getElementById("sticky-add-to-cart");
+    const addToCartButton = document.getElementById("sticky-add-to-cart-button");
+    const originalAddToCartButton = document.querySelector("form[action='/cart/add'] button[type='submit']");
+    const productForm = document.querySelector("form[action='/cart/add']");
+
+    // Show sticky bar when user scrolls past the product form
+    window.addEventListener("scroll", function () {
+        const productDetails = document.querySelector(".sticky-cart"); // Adjust selector if necessary
+        const offset = productDetails.offsetTop + productDetails.offsetHeight;
+
+        if (window.scrollY > offset) {
+            stickyBar.style.display = "block";
+        } else {
+            stickyBar.style.display = "none";
+        }
+    });
+
+    // Replicate original Add to Cart button behavior
+    addToCartButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (productForm) {
+            // Trigger click on the original Add to Cart button to maintain compatibility with MW Product Bundles
+            originalAddToCartButton.click();
+        }
+    });
+});
+
+
+</script>
+        
+<div id="shopify-block-AeVZVUFFVMzBRQkhBN__16789939927838974014" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: rivyo-metafields -->
+
+<script>
+  (function() {
+    window.rivyoShopMetafields = window.rivyoShopMetafields || {};
+
+    
+      
+      
+    
+      
+      
+        
+        window.rivyoShopMetafields["floating_tab_settings"] = {"enabled":"1","tab_style":"text","tab_side":"right","tab_offset_left":"13","tab_offset_right":"13","tab_text":"Reviews","tab_text_direction":"down","tab_offset_y":"50","tab_bg":"#0f766e","tab_text_color":"#ffffff","tab_border_radius":"10","popup_width":"800","popup_height":"600","popup_bg":"#E5E5E5","popup_border_radius":"12","popup_heading":"Let customers speak for us","max_reviews":"6","hide_on_mobile":"0","display_on_home":"1","display_on_product":"1","display_on_cart":"1","display_on_other":"1"};
+      
+    
+      
+      
+        
+        window.rivyoShopMetafields["setting"] = {"rating_icon":"\u003csvg fill=\"#ffcf47\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\" id=\"Capa_1\" x=\"0px\" y=\"0px\" width=\"20px\" height=\"20px\" viewBox=\"0 0 475.075 475.075\" style=\"enable-background:new 0 0 475.075 475.075;\" xml:space=\"preserve\"\u003e\u003cg\u003e\u003cpath d=\"M475.075,186.573c0-7.043-5.328-11.42-15.992-13.135L315.766,152.6L251.529,22.694c-3.614-7.804-8.281-11.704-13.99-11.704   c-5.708,0-10.372,3.9-13.989,11.704L159.31,152.6L15.986,173.438C5.33,175.153,0,179.53,0,186.573c0,3.999,2.38,8.567,7.139,13.706   l103.924,101.068L86.51,444.096c-0.381,2.666-0.57,4.575-0.57,5.712c0,3.997,0.998,7.374,2.996,10.136   c1.997,2.766,4.993,4.142,8.992,4.142c3.428,0,7.233-1.137,11.42-3.423l128.188-67.386l128.197,67.386   c4.004,2.286,7.81,3.423,11.416,3.423c3.819,0,6.715-1.376,8.713-4.142c1.992-2.758,2.991-6.139,2.991-10.136   c0-2.471-0.096-4.374-0.287-5.712l-24.555-142.749l103.637-101.068C472.604,195.33,475.075,190.76,475.075,186.573z\"\/\u003e\u003c\/g\u003e\u003c\/svg\u003e","rating_color":"FFCF47","rating_size":"18","hide_empty_review":0,"frontend_js_version":2};
+      
+    
+
+    
+    delete window.rivyoShopMetafields.product_badge_text;
+    delete window.rivyoShopMetafields.number_of_stars;
+    delete window.rivyoShopMetafields.average_review_label;
+
+    
+    
+      if (!window.rivyoShopMetafields.setting) {
+        window.rivyoShopMetafields['setting'] = {"rating_icon":"\u003csvg fill=\"#ffcf47\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\" id=\"Capa_1\" x=\"0px\" y=\"0px\" width=\"20px\" height=\"20px\" viewBox=\"0 0 475.075 475.075\" style=\"enable-background:new 0 0 475.075 475.075;\" xml:space=\"preserve\"\u003e\u003cg\u003e\u003cpath d=\"M475.075,186.573c0-7.043-5.328-11.42-15.992-13.135L315.766,152.6L251.529,22.694c-3.614-7.804-8.281-11.704-13.99-11.704   c-5.708,0-10.372,3.9-13.989,11.704L159.31,152.6L15.986,173.438C5.33,175.153,0,179.53,0,186.573c0,3.999,2.38,8.567,7.139,13.706   l103.924,101.068L86.51,444.096c-0.381,2.666-0.57,4.575-0.57,5.712c0,3.997,0.998,7.374,2.996,10.136   c1.997,2.766,4.993,4.142,8.992,4.142c3.428,0,7.233-1.137,11.42-3.423l128.188-67.386l128.197,67.386   c4.004,2.286,7.81,3.423,11.416,3.423c3.819,0,6.715-1.376,8.713-4.142c1.992-2.758,2.991-6.139,2.991-10.136   c0-2.471-0.096-4.374-0.287-5.712l-24.555-142.749l103.637-101.068C472.604,195.33,475.075,190.76,475.075,186.573z\"\/\u003e\u003c\/g\u003e\u003c\/svg\u003e","rating_color":"FFCF47","rating_size":"18","hide_empty_review":0,"frontend_js_version":2};
+      }
+    
+    
+      if (!window.rivyoShopMetafields.floating_tab_settings) {
+        window.rivyoShopMetafields['floating_tab_settings'] = {"enabled":"1","tab_style":"text","tab_side":"right","tab_offset_left":"13","tab_offset_right":"13","tab_text":"Reviews","tab_text_direction":"down","tab_offset_y":"50","tab_bg":"#0f766e","tab_text_color":"#ffffff","tab_border_radius":"10","popup_width":"800","popup_height":"600","popup_bg":"#E5E5E5","popup_border_radius":"12","popup_heading":"Let customers speak for us","max_reviews":"6","hide_on_mobile":"0","display_on_home":"1","display_on_product":"1","display_on_cart":"1","display_on_other":"1"};
+      }
+    
+    
+
+    
+    window.rivyoShopMetafields.productsArray = window.rivyoShopMetafields.productsArray || [];
+
+    
+
+    
+
+    
+
+    
+
+    window.rivyoCollectionProduct = window.rivyoShopMetafields.productsArray;
+
+    window.getRivyoShopMetafields = function() {
+      return window.rivyoShopMetafields;
+    };
+
+    window.getRivyoMetafields = function() {
+      return window.rivyoShopMetafields;
+    };
+  })();
+</script>
+<!-- END app snippet -->
+
+<meta id="th_rivyo_shop_url" content="848984-3.myshopify.com">
+<meta id="wc_rivyo_shop_url" content="848984-3.myshopify.com">
+<meta id="th_rivyo_shop_money" content="${{amount}}"><style>
+  .rivyoReviewWidget .rivyoReviewRatingIcon svg{
+    width:18px;
+    height:18px;
+  }
+  .rivyoReviewWidget .rivyoReviewRatingIcon>svg,
+  .rivyoReviewWidget .rivyoReviewRatingIcon>.rivyoReviewFill>svg{
+    fill:#FFCF47;
+    width:18px;
+    height:18px;
+  }
+  .rivyoReviewWidget {
+    position: relative;
+    display: flex !important;
+    flex-wrap: wrap;
+    line-height: 0;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  .rivyoReviewWidget .rivyoReviewRatingIcon {
+    position: relative;
+    display: inline-block;
+  }
+  .rivyoReviewWidget span.rivyoReviewEmpty svg path {
+    fill: #DEDEDE;
+  }
+  .rivyoReviewWidget span.rivyoReviewFill {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    left:0;
+  }
+</style>
+
+
+
+
+
+  
+  <link
+    href="https://cdn.shopify.com/extensions/01a176b1-203c-7f87-bed0-b0dfa9947847/rivyo-product-review-441/assets/rivyo-style.css?shop=848984-3.myshopify.com&v=2"
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+  >
+  <link
+    href="https://cdn.shopify.com/extensions/01a176b1-203c-7f87-bed0-b0dfa9947847/rivyo-product-review-441/assets/wc-rivyo-swiper.css?shop=848984-3.myshopify.com&v=2"
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+  >
+  <script
+    src="https://cdn.shopify.com/extensions/01a176b1-203c-7f87-bed0-b0dfa9947847/rivyo-product-review-441/assets/rivyo-script.js?shop=848984-3.myshopify.com&v=2"
+    type="text/javascript"
+    defer
+  ></script>
+  <script
+    src="https://cdn.shopify.com/extensions/01a176b1-203c-7f87-bed0-b0dfa9947847/rivyo-product-review-441/assets/wc-star-autosetup.js?shop=848984-3.myshopify.com&v=2"
+    type="text/javascript"
+    defer
+  ></script>
+  
+  
+  
+  <style id="wcRivyoStyle">
+    
+  </style>
+  <script>
+    const rivyoCustomerDetails = {
+      name: '',
+      email: '',
+    };
+  </script>
+  <script>
+    (function () {
+      var meta = window.rivyoShopMetafields;
+      var arr = meta && Array.isArray(meta.productsArray) ? meta.productsArray : [];
+      if (!Array.isArray(window.rivyoCollectionProduct) || window.rivyoCollectionProduct.length === 0) {
+        window.rivyoCollectionProduct = arr;
+      }
+    })();
+  </script>
+
+
+<div is="th-rivyo-embed-code" data-frontend_js_version="2" style="display:none;"></div>
+
+
+</div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</body>
+</html>
